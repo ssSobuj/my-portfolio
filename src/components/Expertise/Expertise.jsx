@@ -6,8 +6,8 @@ import { getImageUrl } from "../../utils";
 
 export const Expertise = () => {
   return (
-    <section className={styles.container} id="expertise">
-      <h2 className={styles.title}>Expertise</h2>
+    <fieldset className={styles.container} id="expertise">
+      <legend className={styles.title}>Expertise</legend>
       <div className={styles.content}>
         <div className={styles.skills}>
           {skills.map((skill, id) => {
@@ -22,6 +22,6 @@ export const Expertise = () => {
           })}
         </div>
       </div>
-    </section>
+    </fieldset>
   );
 };

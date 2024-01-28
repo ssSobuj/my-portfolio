@@ -18,8 +18,9 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 40px;
+  text-align: start;
+  padding: 0 10px;
+  /* padding-bottom:0 10px;  */
 }
 
 .content {

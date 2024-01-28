@@ -5,9 +5,9 @@ import { getImageUrl } from "../../utils";
 
 export const Contact = () => {
   return (
-    <section id="contact" className={styles.container}>
+    <fieldset id="contact" className={styles.container}>
+      <legend className={styles.title}>Contact</legend>
       <div className={styles.text}>
-        <h2>Contact</h2>
         <p>Feel free to reach out!</p>
       </div>
       <ul className={styles.links}>
@@ -36,6 +36,6 @@ export const Contact = () => {
           </a>
         </li>
       </ul>
-    </section>
+    </fieldset>
   );
 };
