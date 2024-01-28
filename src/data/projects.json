@@ -1,0 +1,18 @@
+[
+  {
+    "title": "HALAL JIBIKA",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the ReactJs by building an app with using crud oparetion.",
+    "skills": ["React", "React Router Dom", "Firebase Auth"],
+    "Live": "https://halal-jibika-gamma.vercel.app/",
+    "source": "https://github.com/ssSobuj/Halal-Jibika"
+  },
+  {
+    "title": "TODO APP",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the ReactJs by building an app with using crud oparetion.",
+    "skills": ["React", "useReducer with ", "useContext"],
+    "Live": "https://todo-list-app-sigma-sand.vercel.app/",
+    "source": "https://github.com/ssSobuj/todo-useRducer-useContext"
+  }
+]

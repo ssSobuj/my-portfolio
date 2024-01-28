@@ -1,0 +1,17 @@
+:root {
+  /* Colours */
+  /* --color-text: #fff;
+  --color-primary: #576cbc;
+  --color-secondary: #19376d;
+  --color-dark: #0b2447;
+  --color-bg: #04152d; */
+
+  --color-text: #fff;
+  --color-primary: #5C8374;
+  --color-secondary: #19376d;
+  --color-dark: #0b2447;
+  --color-bg: #183D3D;
+
+  /* Fonts */
+  --font-roboto: "Roboto";
+}
