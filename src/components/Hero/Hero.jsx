@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Sabuj</h1>
+        <h1 className={styles.title}>Hi, I'm Sabuj Mia</h1>
         <p className={styles.description}>
           I'm a front-end developer using React <br /> Reach out if you'd like
           to learn more!
@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className={styles.imgDiv}>
         <img
           // src={getImageUrl("hero/heroImage.png")}j
-          src={getImageUrl("hero/resiger.png")}
+          src={getImageUrl("hero/heroImage.png")}
           alt="Hero image of me"
           className={styles.heroImg}
         />

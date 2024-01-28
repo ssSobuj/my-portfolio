@@ -5,8 +5,11 @@ import { getImageUrl } from "../../utils";
 
 export const About = () => {
   return (
-    <section className={styles.container} id="about">
-      <h2 className={styles.title}>About Me</h2>
+    <fieldset className={styles.container} id="about">
+      <legend>
+        {" "}
+        <h2 className={styles.title}>About Me</h2>
+      </legend>
       <div className={styles.content}>
         <img
           src={getImageUrl("about/about2.png")}
@@ -36,6 +39,6 @@ export const About = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </fieldset>
   );
 };
