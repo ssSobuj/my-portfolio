@@ -9,7 +9,7 @@
   background: #5C8374;
   /* box-shadow: 0 16px 14px 0 #04152d; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: 18px 24px;
+  padding: 20px 32px;
   max-width: 345px;
 }
 
@@ -25,7 +25,7 @@
 
 .description {
   margin-top: 6px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .skill {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
@@ -59,7 +59,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--color-text);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-primary);

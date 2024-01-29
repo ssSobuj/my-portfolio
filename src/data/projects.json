@@ -1,7 +1,7 @@
 [
   {
     "title": "HALAL JIBIKA",
-    "imageSrc": "projects/project2.png",
+    "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the ReactJs by building an app with using crud oparetion.",
     "skills": ["React", "React Router Dom", "Firebase Auth"],
     "Live": "https://halal-jibika-gamma.vercel.app/",

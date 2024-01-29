@@ -9,7 +9,7 @@ export const About = () => {
       <legend className={styles.title}>About Me</legend>
       <div className={styles.content}>
         <img
-          src={getImageUrl("about/about2.png")}
+          src={getImageUrl("about/about.jpg")}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
@@ -27,10 +27,9 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>React Developer</h3>
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                I have experience in reactJS for building user interface and other things.
               </p>
             </div>
           </li>
