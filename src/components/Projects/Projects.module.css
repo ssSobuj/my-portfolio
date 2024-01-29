@@ -26,5 +26,15 @@
   align-items: center;
   justify-content: center;
   gap: 55px;
-  width: 100%;
+}
+
+@media screen and (max-width: 840px) {
+  .container{
+    margin-left: 5%;
+    margin-right: 5%; 
+    padding: 55px 0;
+  }
+  .projects {
+    flex-direction: column;
+  }
 }

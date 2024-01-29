@@ -74,3 +74,15 @@
 .link:hover{
   background-color: #286565;
 }
+
+@media screen and (max-width: 840px) {
+
+  .container {
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .link,.description,.skill {
+    font-size: 16px;
+  }
+}

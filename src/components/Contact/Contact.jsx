@@ -65,7 +65,7 @@ export const Contact = () => {
               href="https://www.linkedin.com/in/developer-sabuj-mia/"
               target="_blank"
             >
-              linkedin.com/myname
+              linkedin.com/sabuj-mia
             </a>
           </li>
           <li className={styles.link}>
@@ -74,7 +74,7 @@ export const Contact = () => {
               alt="Github icon"
             />
             <a href="https://github.com/ssSobuj" target="_blank">
-              github.com/myname
+              github.com/sabuj-mia
             </a>
           </li>
           <li className={styles.link}>
