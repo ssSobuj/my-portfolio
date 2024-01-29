@@ -32,6 +32,7 @@ export const Contact = () => {
       <fieldset id="contact" className={styles.container}>
         <legend className={styles.title}>Contact</legend>
         <form className={styles.form} ref={form} onSubmit={sendEmail}>
+          <p>Live Your Message Here!</p>
           <div>
             <label>Name</label>
             <input type="text" name="user_name" />
@@ -78,9 +79,7 @@ export const Contact = () => {
           </li>
           <li className={styles.link}>
             <img src={getImageUrl("contact/phone.jpg")} alt="Phone nomber" />
-            <a href="" target="_blank">
-              +88 0173-1620-933
-            </a>
+            <a href="tel:+8801731620933">+88 0173-1620-933</a>
           </li>
         </ul>
       </fieldset>
