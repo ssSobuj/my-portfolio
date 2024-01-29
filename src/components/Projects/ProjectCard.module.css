@@ -4,14 +4,18 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  background: transparent;
   background: #5C8374;
-  /* box-shadow: 0 16px 14px 0 #04152d; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 20px 32px;
-  max-width: 345px;
+  max-width: 325px;
+  transition: all ease 1s;
 }
+
+.container:hover {
+  scale: 0.96;
+  background-color: #729b8b;
+}
+
 
 .image {
   margin-bottom: 26px;
@@ -55,15 +59,18 @@
 }
 
 .link {
-  width: 45%;
+  width: 48%;
   text-align: center;
   text-decoration: none;
   color: var(--color-text);
   font-size: 18px;
   font-weight: 400;
   border-radius: 100px;
-  background: var(--color-primary);
   background-color: var(--color-bg);
-  /* border:1px solid var(--color-text); */
   padding: 5px 10px;
+  transition: all ease 0.5s;
+}
+
+.link:hover{
+  background-color: #286565;
 }
