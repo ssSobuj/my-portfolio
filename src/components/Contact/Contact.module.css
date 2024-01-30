@@ -27,7 +27,7 @@
   list-style: none;
   gap: 20px;
 }
-.links p{
+.links p {
   font-size: 35px;
   margin-bottom: 20px;
 }
@@ -58,7 +58,7 @@
   align-content: center;
   justify-content: space-between;
 
-  p{
+  p {
     font-size: 35px;
     margin-bottom: 20px;
   }
@@ -76,13 +76,13 @@
       outline: none;
     }
     textarea {
-      width: 80%;    
+      width: 80%;
     }
-    label{
+    label {
       width: 20%;
     }
   }
-  button{
+  button {
     cursor: pointer;
     padding: 5px 0;
     width: 20%;
@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 480px) {
   .container {
     flex-direction: column;
     gap: 50px;
@@ -98,7 +98,26 @@
     margin-right: 5%;
     padding: 55px 10px;
   }
-  .form{
+  .form {
+    width: 100%;
+  }
+  .links {
+    width: 100%;
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 480.01px) and (max-width: 840px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 55px 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
     width: 100%;
   }
   .links {

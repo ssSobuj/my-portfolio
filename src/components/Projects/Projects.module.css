@@ -28,13 +28,24 @@
   gap: 55px;
 }
 
-@media screen and (max-width: 840px) {
-  .container{
+@media screen and (max-width: 480px) {
+  .container {
     margin-left: 5%;
-    margin-right: 5%; 
+    margin-right: 5%;
     padding: 55px 0;
   }
   .projects {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480.01px) and (max-width: 840px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 55px 0;
+  }
+  .projects {
+    flex-direction: row;
   }
 }
