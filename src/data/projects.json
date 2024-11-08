@@ -1,18 +1,42 @@
 [
   {
-    "title": "HALAL JIBIKA",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the ReactJs by building an app with using crud oparetion.",
-    "skills": ["React", "React Router Dom", "Firebase Auth"],
-    "Live": "https://halal-jibika-gamma.vercel.app/",
-    "source": "https://github.com/ssSobuj/Halal-Jibika"
+    "title": "Learning Management System (LMS)",
+    "imageSrc": "projects/lms2.png",
+    "description": "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
+    "skills": ["Next.js", "Bootstrap", "SASS"],
+    "Live": "https://uylab.thetork.com",
+    "source": ""
   },
   {
-    "title": "TODO APP",
-    "imageSrc": "projects/project2.png",
-    "description": "This is a project made to learn the ReactJs by building an app with using crud oparetion.",
-    "skills": ["React", "useReducer with ", "useContext"],
-    "Live": "https://todo-list-app-sigma-sand.vercel.app/",
-    "source": "https://github.com/ssSobuj/todo-useRducer-useContext"
+    "title": "CUET Official Web Application & Job Portal",
+    "imageSrc": "projects/cuet.png",
+    "description": "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience for the job portal.",
+    "skills": ["Next.js", "Bootstrap", "SASS"],
+    "Live": "https://beta.cuet.ac.bd",
+    "source": "URL-to-CUET-source-code"
+  },
+  {
+    "title": "Life Management Application",
+    "imageSrc": "projects/life-management.png",
+    "description": "I developed the frontend for a life management project, translating Figma designs into a responsive Next.js interface with Bootstrap and SASS, ensuring performance and pixel-perfect accuracy.",
+    "skills": ["Next.js", "Bootstrap", "SASS", "React Bootstrap"],
+    "Live": "https://lifesync.one",
+    "source": "URL-to-Life-Management-source-code"
+  },
+  {
+    "title": "The Tork Inc. Official Website Development",
+    "imageSrc": "projects/tork-inc.png",
+    "description": "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company’s tech services and enhances user experience.",
+    "skills": ["Next.js", "Bootstrap", "SASS"],
+    "Live": "URL-to-Tork-Inc-project",
+    "source": "URL-to-Tork-Inc-source-code"
+  },
+  {
+    "title": "AI Generator Platform Development",
+    "imageSrc": "projects/ai-generator.png",
+    "description": "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface.",
+    "skills": ["Next.js", "TypeScript", "Tailwind CSS", "Radix UI"],
+    "Live": "URL-to-AI-Generator-project",
+    "source": "URL-to-AI-Generator-source-code"
   }
 ]

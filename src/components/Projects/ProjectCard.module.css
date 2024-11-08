@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: #5C8374;
+  background: #5c8374;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: 20px 32px;
+  padding: 20px 20px;
   max-width: 325px;
   transition: all ease 1s;
 }
@@ -15,7 +15,6 @@
   scale: 0.96;
   background-color: #729b8b;
 }
-
 
 .image {
   margin-bottom: 26px;
@@ -67,22 +66,23 @@
   font-weight: 400;
   border-radius: 100px;
   background-color: var(--color-bg);
-  padding: 5px 10px;
+  padding: 8px 16px;
   transition: all ease 0.5s;
 }
 
-.link:hover{
+.link:hover {
   background-color: #286565;
 }
 
 @media screen and (max-width: 840px) {
-
   .container {
     width: 300px;
     margin-left: 0;
     margin-right: 0;
   }
-  .link,.description,.skill {
+  .link,
+  .description,
+  .skill {
     font-size: 16px;
   }
 }

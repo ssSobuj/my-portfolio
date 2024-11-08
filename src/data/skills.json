@@ -1,6 +1,6 @@
 [
   {
-    "title": "HTM5L",
+    "title": "HTML5",
     "imageSrc": "skills/html.png"
   },
   {
@@ -8,16 +8,41 @@
     "imageSrc": "skills/css.png"
   },
   {
-    "title": "Tailwind",
+    "title": "Tailwind CSS",
     "imageSrc": "skills/tailwind.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/bootstrap.png"
+  },
+  {
+    "title": "SASS",
+    "imageSrc": "skills/sass.png"
   },
   {
     "title": "JavaScript",
     "imageSrc": "skills/javascript.png"
   },
   {
-    "title": "ReactJS",
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.png"
+  },
+  {
+    "title": "React.js",
     "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Next.js",
+    "imageSrc": "skills/nextjs.png"
+  },
+  {
+    "title": "Redux Toolkit",
+    "imageSrc": "skills/redux.png"
+  },
+
+  {
+    "title": "ShadCN UI",
+    "imageSrc": "skills/shadcn.png"
   },
   {
     "title": "Figma",

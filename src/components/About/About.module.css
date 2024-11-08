@@ -39,7 +39,10 @@
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  /* gap: 50px; */
+  gap: 20px;
+  p {
+    font-size: 22px;
+  }
 }
 
 .aboutItem {

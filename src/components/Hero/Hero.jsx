@@ -4,21 +4,31 @@ import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/redy-light-CV.pdf"; // Path to your PDF file
+    link.download = "redy-light-CV.pdf"; // Desired file name when downloaded
+    link.click();
+  };
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Sabuj Mia</h1>
         <p className={styles.description}>
-          I'm a front-end developer using React <br /> Reach out if you'd like
-          to learn more!
+          I'm a front-end developer specializing in React. <br />
+          Feel free to reach out if you'd like to learn more!
         </p>
-        <a href="#contact" className={styles.contactBtn}>
-          Contact Me
-        </a>
+        <button
+          onClick={handleDownloadCV}
+          href="#contact"
+          className={styles.contactBtn}
+        >
+          Download CV
+        </button>
       </div>
       <div className={styles.imgDiv}>
         <img
-          // src={getImageUrl("hero/heroImage.png")}j
           src={getImageUrl("hero/heroImage.png")}
           alt="Hero image of me"
           className={styles.heroImg}

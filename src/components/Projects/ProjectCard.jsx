@@ -28,9 +28,9 @@ export const ProjectCard = ({
         <a href={Live} target="_blank" className={styles.link}>
           Live Link
         </a>
-        <a href={source} target="_blank" className={styles.link}>
+        {/* <a href={source} target="_blank" className={styles.link}>
           Source Code
-        </a>
+        </a> */}
       </div>
     </div>
   );
