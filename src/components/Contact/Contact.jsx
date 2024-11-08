@@ -32,7 +32,7 @@ export const Contact = () => {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Something went wrong. Please try again later.",
+            text: "Something went wrong. Please try again later, or reach out directly via email.",
           });
         }
       );
