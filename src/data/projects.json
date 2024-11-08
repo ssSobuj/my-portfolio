@@ -28,7 +28,7 @@
     "imageSrc": "projects/tork-inc.png",
     "description": "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company’s tech services and enhances user experience.",
     "skills": ["Next.js", "Bootstrap", "SASS"],
-    "Live": "URL-to-Tork-Inc-project",
+    "Live": "https://thetork.com",
     "source": "URL-to-Tork-Inc-source-code"
   },
   {
@@ -36,7 +36,7 @@
     "imageSrc": "projects/ai-generator.png",
     "description": "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface.",
     "skills": ["Next.js", "TypeScript", "Tailwind CSS", "Radix UI"],
-    "Live": "URL-to-AI-Generator-project",
+    "Live": "https://zepid.ai",
     "source": "URL-to-AI-Generator-source-code"
   }
 ]
