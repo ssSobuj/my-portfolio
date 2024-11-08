@@ -3,6 +3,7 @@ import { getImageUrl } from "../../utils";
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export const Contact = () => {
   const form = useRef();
@@ -20,9 +21,19 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            icon: "success",
+            title: "Email Sent!",
+            text: "Your message has been successfully sent.",
+          });
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong. Please try again later.",
+          });
         }
       );
   };
