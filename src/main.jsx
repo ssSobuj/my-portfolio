@@ -1,13 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
+import { createRoot } from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes.jsx";
+import "./styles/styles.sass";
 
-import "@fontsource/outfit";
-import "@fontsource/roboto";
+const rootId = "root";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const root = createRoot(document.getElementById(rootId));
+root.render(<RouterProvider router={router} />);
