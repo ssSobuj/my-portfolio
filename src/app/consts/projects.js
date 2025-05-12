@@ -62,6 +62,19 @@ const projects = [
     techs: ["NextJs", "Bootstrap", "SCSS"],
     hasImage: true,
   },
+  {
+    id: "meridian",
+    name: "Meridian Consultancy – Immigration & Visa Solutions Platform",
+    description:
+      "Built the frontend for Meridian Consultancy using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
+    image: "/images/projects/meridian-consultancy.png",
+
+    links: {
+      live: "meridianconsultancy.com.au",
+    },
+    techs: ["NextJs", "CSS"],
+    hasImage: true,
+  },
 ];
 
 export default projects;

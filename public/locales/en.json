@@ -115,9 +115,8 @@
       "description": "Who am i",
       "about": {
         "description": [
-          "I’m a self-taught front-end developer based in Warsaw, Poland. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. ",
-          "Transforming my creativity and knowledge into a websites has been my passion for over a two years. I have been helping various clients to establish their presence online. ",
-          "I always strive to learn about the newest technologies and frameworks. "
+          "Hello! I'm Sabuj Mia, a frontend-focused full-stack developer with 1+ years of experience building end-to-end web solutions. I specialize in React, Next.js, and TypeScript, crafting high-performance interfaces with 95+ Lighthouse scores while seamlessly integrating backend APIs and databases like MongoDB Atlas.",
+          "My work spans university management systems, job portals with payment gateways, and AI-driven platforms—combining responsive UI design (Tailwind/SASS) with robust functionality (Node.js/Express). Passionate about optimizing user flows in form-heavy apps (LMS, dashboards) and solving problems collaboratively in agile environments."
         ]
       },
       "skills": {
@@ -127,7 +126,7 @@
         "title": "fun-facts",
         "list": [
           "I like winter more than summer",
-          "I often bike with my friends",
+          "I don't like bikes",
           "I like pizza and pasta",
           "My favorite movie is The Green Mile"
         ]
