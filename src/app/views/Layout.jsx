@@ -27,7 +27,11 @@ const Layout = ({ children }) => {
       <Header headerTranslations={locale.header} />
       <div className="container content">
         <Suspense
-          fallback={<div style={{ marginBlock: "2rem" }}>Loading...</div>}
+          fallback={
+            <div style={{ marginBlock: "2rem", height: "80vh" }}>
+              Loading...
+            </div>
+          }
         >
           {children &&
             React.cloneElement(children, {
