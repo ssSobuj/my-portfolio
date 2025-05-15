@@ -9,7 +9,14 @@ const skills = {
   styling: ["SASS/SCSS", "Tailwind CSS", "Bootstrap"],
 
   // Frontend frameworks matching your work experience
-  frontend: ["React.js", "Next.js", "React Hook Form", "Redux Toolkit"],
+  frontend: [
+    "React.js",
+    "Next.js",
+    "Vue,js",
+    "Nuxt.js",
+    "React Hook Form",
+    "Redux Toolkit",
+  ],
 
   // Backend/APIs you've worked with (from API integrations in CV)
   backend: ["Node.js", "Express.js", "REST APIs", "NextAuth.js"],
