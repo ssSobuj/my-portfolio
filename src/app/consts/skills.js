@@ -12,7 +12,7 @@ const skills = {
   frontend: [
     "React.js",
     "Next.js",
-    "Vue,js",
+    "Vue.js",
     "Nuxt.js",
     "React Hook Form",
     "Redux Toolkit",
