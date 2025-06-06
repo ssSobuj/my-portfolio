@@ -15,8 +15,7 @@ const Projects = () => {
       name: "Learning Management System",
       description:
         "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
-      image:
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
+      image: "/projects/uylab.png",
       links: {
         live: "uylab.org",
       },
@@ -26,12 +25,11 @@ const Projects = () => {
       role: "Frontend Developer",
     },
     {
-      id: "kiraibd",
+      id: "kireibd",
       name: "Kirai BD a e-commerce Website",
       description:
         "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Nuxt.js, Vue.js, and SASS, ensuring a smooth shopping experience with real-time updates.",
-      image:
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      image: "/projects/kiraibd.png",
       links: {
         live: "kireibd.com",
       },
@@ -45,8 +43,7 @@ const Projects = () => {
       name: "CUET Official Web Application",
       description:
         "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
-      image:
-        "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop",
+      image: "/projects/cuet.png",
       links: {
         live: "cuet.thetork.com",
       },
@@ -60,8 +57,7 @@ const Projects = () => {
       name: "AI Generator Platform Development",
       description:
         "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface.",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+      image: "/projects/zepid.png",
       links: {
         live: "zepid.ai",
       },
@@ -75,8 +71,7 @@ const Projects = () => {
       name: "The Tork Inc. Official Website Development",
       description:
         "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and enhances user experience.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: "/projects/thetork.png",
       links: {
         live: "thetork.com",
       },
@@ -90,12 +85,25 @@ const Projects = () => {
       name: "CUET Job Portal",
       description:
         "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
-      image:
-        "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
+      image: "/projects/jobcuet.png",
       links: {
         live: "jobs.cuet.ac.bd",
       },
       techs: ["NextJs", "Bootstrap", "SCSS"],
+      hasImage: true,
+      type: "professional",
+      role: "Frontend Developer",
+    },
+    {
+      id: "meridian",
+      name: "Meridian Consultancy – Immigration & Visa Solutions",
+      description:
+        "Built the frontend for Meridian Consultancy using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
+      image: "/projects/meridian-consultancy.png",
+      links: {
+        live: "meridianconsultancy.com.au",
+      },
+      techs: ["NextJs", "Css"],
       hasImage: true,
       type: "professional",
       role: "Frontend Developer",

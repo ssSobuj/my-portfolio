@@ -122,7 +122,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
+          <div className="bg-gray-800 rounded-xl p-4 lg:p-8 border border-gray-700">
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label

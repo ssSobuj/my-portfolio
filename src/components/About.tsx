@@ -73,7 +73,7 @@ const About = () => {
                     role: "Frontend Developer",
                   </div>
                   <div className="text-gray-300 text-sm ml-4">
-                    experience: "3+ years",
+                    experience: "1.5+ years",
                   </div>
                   <div className="text-gray-300 text-sm ml-4">
                     location: "Bangladesh",
