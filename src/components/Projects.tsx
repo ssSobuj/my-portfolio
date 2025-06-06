@@ -178,7 +178,7 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
 
                 {/* Project Type Badge */}
-                <div className="absolute top-4 left-4">
+                {/* <div className="absolute top-4 left-4">
                   <div
                     className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border backdrop-blur-sm ${getProjectTypeColor(
                       project.type
@@ -187,7 +187,7 @@ const Projects = () => {
                     {getProjectTypeIcon(project.type)}
                     {formatProjectType(project.type)}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Overlay with links */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
