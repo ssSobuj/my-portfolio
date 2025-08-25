@@ -204,7 +204,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center"
             >
               <a
-                href="/MDSabujMia_Resume.pdf"
+                href="/Sabuj-Mia-Resume.pdf"
                 download
                 className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
