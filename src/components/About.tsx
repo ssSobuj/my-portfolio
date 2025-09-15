@@ -42,11 +42,11 @@ const About = () => {
                 <span className="text-gray-300 ml-2">Years Experience</span>
               </div>
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">7+</span>
+                <span className="text-indigo-400 font-semibold">9+</span>
                 <span className="text-gray-300 ml-2">Projects Completed</span>
               </div>
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">3+</span>
+                <span className="text-indigo-400 font-semibold">10+</span>
                 <span className="text-gray-300 ml-2">
                   Technologies Mastered
                 </span>

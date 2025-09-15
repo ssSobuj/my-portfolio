@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser"; // Import EmailJS
 
 const Contact = () => {
@@ -118,7 +118,24 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+
+
+               <div className="flex items-center space-x-4">
+      <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
+        <Phone className="text-white" size={20} />
+      </div>
+      <div>
+        <h4 className="text-white font-semibold">Phone</h4>
+        <a
+          href="tel:+01731620933"
+          className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+        >
+          +01731620933
+        </a>
+      </div>
+    </div>
             </div>
+            
           </div>
 
           {/* Contact Form */}
