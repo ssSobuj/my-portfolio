@@ -75,7 +75,7 @@ const Projects = () => {
         "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
       image: "/projects/cuet.png",
       links: {
-        live: "v2.cuet.ac.bd",
+        live: "cuet.ac.bd",
       },
       techs: ["NextJs", "Bootstrap", "SCSS"],
       hasImage: true,
@@ -194,7 +194,7 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (           
+          {projects.map((project, index) => (
             <div
               key={project.id}
               className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 group shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20"
