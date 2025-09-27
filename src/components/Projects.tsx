@@ -11,29 +11,13 @@ import {
 const Projects = () => {
   const projects = [
     {
-      id: "story-nest",
-      name: "Story Nest - Full-Stack Publishing Platform",
+      id: "cuet",
+      name: "CUET Official Web Application",
       description:
-        "A full-stack story-telling platform where users can write, publish, and share their stories. Features a robust authentication system with Google OAuth and JWT-based email/password login. Incorporates a multi-tiered role system (User, Admin, Super Admin) to manage content approval workflows, ensuring content quality and platform integrity.",
-      image: "/projects/story-nest.png", // IMPORTANT: See Step 2 below
+        "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
+      image: "/projects/cuet.png",
       links: {
-        live: "story-nest-topaz.vercel.app",
-        github_frontend: "github.com/ssSobuj/storyNestFrontend",
-        github_backend: "github.com/ssSobuj/storyNestServer",
-      },
-      techs: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "JWT"],
-      hasImage: true,
-      type: "personal", // This will give it the green "Personal" tag
-      role: "Full-Stack Developer",
-    },
-    {
-      id: "uylab",
-      name: "Learning Management System",
-      description:
-        "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
-      image: "/projects/uylab.png",
-      links: {
-        live: "uylab.org",
+        live: "cuet.ac.bd",
       },
       techs: ["NextJs", "Bootstrap", "SCSS"],
       hasImage: true,
@@ -55,6 +39,50 @@ const Projects = () => {
       role: "Frontend Developer",
     },
     {
+      id: "uylab",
+      name: "Learning Management System",
+      description:
+        "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
+      image: "/projects/uylab.png",
+      links: {
+        live: "uylab.org",
+      },
+      techs: ["NextJs", "Bootstrap", "SCSS"],
+      hasImage: true,
+      type: "professional",
+      role: "Frontend Developer",
+    },
+    {
+      id: "jobcuet",
+      name: "CUET Job Portal",
+      description:
+        "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
+      image: "/projects/jobcuet.png",
+      links: {
+        live: "jobs.cuet.ac.bd",
+      },
+      techs: ["NextJs", "Bootstrap", "SCSS"],
+      hasImage: true,
+      type: "professional",
+      role: "Frontend Developer",
+    },
+    {
+      id: "story-nest",
+      name: "Story Nest - Full-Stack Publishing Platform",
+      description:
+        "A full-stack story-telling platform where users can write, publish, and share their stories. Features a robust authentication system with Google OAuth and JWT-based email/password login. Incorporates a multi-tiered role system (User, Admin, Super Admin) to manage content approval workflows, ensuring content quality and platform integrity.",
+      image: "/projects/story-nest.png", // IMPORTANT: See Step 2 below
+      links: {
+        live: "story-nest-topaz.vercel.app",
+        github_frontend: "github.com/ssSobuj/storyNestFrontend",
+        github_backend: "github.com/ssSobuj/storyNestServer",
+      },
+      techs: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "JWT"],
+      hasImage: true,
+      type: "personal", // This will give it the green "Personal" tag
+      role: "Full-Stack Developer",
+    },
+    {
       id: "mailprofessors",
       name: "Mail Professors - AI Academic Outreach Platform",
       description:
@@ -68,20 +96,7 @@ const Projects = () => {
       type: "professional",
       role: "Frontend Developer",
     },
-    {
-      id: "cuet",
-      name: "CUET Official Web Application",
-      description:
-        "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
-      image: "/projects/cuet.png",
-      links: {
-        live: "cuet.ac.bd",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
+
     {
       id: "zepid",
       name: "AI Generator Platform Development",
@@ -110,20 +125,7 @@ const Projects = () => {
       type: "professional",
       role: "Frontend Developer",
     },
-    {
-      id: "jobcuet",
-      name: "CUET Job Portal",
-      description:
-        "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
-      image: "/projects/jobcuet.png",
-      links: {
-        live: "jobs.cuet.ac.bd",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
+
     {
       id: "meridian",
       name: "Meridian Consultancy – Immigration & Visa Solutions",
