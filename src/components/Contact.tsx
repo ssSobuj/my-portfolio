@@ -43,12 +43,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Get In Touch
+          </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Have a project in mind? Let's discuss how we can work together to
             bring your ideas to life.
           </p>
@@ -58,10 +60,10 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">
                 Let's Connect
               </h3>
-              <p className="text-gray-300 text-lg mb-8">
+              <p className="text-muted-foreground text-lg mb-8">
                 I'm always interested in hearing about new projects and
                 opportunities. Whether you're a company looking to hire, or
                 you're a developer looking to collaborate, I'd love to hear from
@@ -75,10 +77,10 @@ const Contact = () => {
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold">Email</h4>
+                  <h4 className="text-foreground font-semibold">Email</h4>
                   <a
                     href="mailto:mdsobujredoy@gmail.com"
-                    className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                   >
                     mdsobujredoy@gmail.com
                   </a>
@@ -90,12 +92,12 @@ const Contact = () => {
                   <Linkedin className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold">LinkedIn</h4>
+                  <h4 className="text-foreground font-semibold">LinkedIn</h4>
                   <a
                     href="https://www.linkedin.com/in/developer-sabuj-mia/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                   >
                     developer-sabuj-mia
                   </a>
@@ -107,12 +109,12 @@ const Contact = () => {
                   <Github className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold">GitHub</h4>
+                  <h4 className="text-foreground font-semibold">GitHub</h4>
                   <a
                     href="https://github.com/ssSobuj"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                   >
                     ssSobuj
                   </a>
@@ -125,10 +127,10 @@ const Contact = () => {
         <Phone className="text-white" size={20} />
       </div>
       <div>
-        <h4 className="text-white font-semibold">Phone</h4>
+        <h4 className="text-foreground font-semibold">Phone</h4>
         <a
           href="tel:+01731620933"
-          className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+          className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
         >
           +01731620933
         </a>
@@ -139,12 +141,12 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800 rounded-xl p-4 lg:p-8 border border-gray-700">
+          <div className="bg-card rounded-xl p-4 lg:p-8 border border-border">
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-muted-foreground mb-2"
                 >
                   Name
                 </label>
@@ -155,7 +157,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                   placeholder="Your Name"
                 />
               </div>
@@ -163,7 +165,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-muted-foreground mb-2"
                 >
                   Email
                 </label>
@@ -174,7 +176,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -182,7 +184,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-muted-foreground mb-2"
                 >
                   Message
                 </label>
@@ -193,7 +195,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-indigo-500 transition-colors duration-200 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>
