@@ -138,7 +138,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-28 lg:pt-32 py-20"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted to-background pt-28 lg:pt-32 py-20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -159,16 +159,16 @@ const Hero = () => {
 
             <motion.h1
               variants={word}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight text-center lg:text-left"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight text-center lg:text-left"
             >
               <span className="text-indigo-400">Full-Stack</span> Developer
               <br />
-              building modern web apps
+              Building Modern Web Applications
             </motion.h1>
 
             <motion.p
               variants={word}
-              className="text-xl text-gray-300 mb-12 leading-relaxed"
+              className="text-xl text-muted-foreground mb-12 leading-relaxed"
             >
               I build fast, reliable web apps with React/Next.js, Node.js APIs,
               and SQL/NoSQL databases.
@@ -188,7 +188,7 @@ const Hero = () => {
               <a
                 href="#"
                 onClick={(e) => handleSmoothScroll(e, "#about")}
-                className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
+                className="border border-border hover:border-foreground/40 text-muted-foreground hover:text-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
               >
                 Learn More
                 <ArrowDown size={20} />

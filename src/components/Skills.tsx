@@ -137,6 +137,7 @@ const Skills = () => {
       "React Hook Form",
       "Redux Toolkit",
       "Zustand",
+      "React Query",
     ],
     backend: ["Node.js", "Express.js", "REST APIs", "NextAuth.js"],
     tools: [
@@ -163,14 +164,14 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
             Skills & Technologies
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A snapshot of the primary tools and technologies I use to build
             modern web applications.
           </p>
@@ -181,22 +182,22 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
+              className="bg-card rounded-xl p-6 border border-border hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
             >
               <div className="flex items-center mb-4">
                 <div className="text-indigo-400 mr-4">
                   {React.cloneElement(category.icon, { size: 24 })}
                 </div>
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-foreground">
                   {category.title}
                 </h3>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-700">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-gray-900 border border-gray-600 text-gray-300 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-muted border border-border text-muted-foreground rounded-full text-sm font-medium"
                   >
                     {skill}
                   </span>
@@ -207,7 +208,7 @@ const Skills = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-gray-400 text-lg">
+          <p className="text-muted-foreground text-lg">
             Always learning and exploring new technologies to stay ahead of the
             curve.
           </p>

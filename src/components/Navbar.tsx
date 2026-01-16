@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Github, Linkedin, Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,10 +53,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-gray-900/80 border-b border-gray-800">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-background/80 border-b border-border">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-8 h-16">
         {/* Logo */}
-        <div className="text-white font-bold text-2xl tracking-wide select-none cursor-default">
+        <div className="text-foreground font-bold text-2xl tracking-wide select-none cursor-default">
           Sabuj Mia<span className="text-indigo-500">.</span>
         </div>
 
@@ -66,7 +67,7 @@ const Navbar = () => {
               key={item.name}
               href={item.href}
               onClick={(e) => handleSmoothScroll(e, item.href)}
-              className={`relative text-gray-300 font-medium text-lg transition-colors duration-300 hover:text-indigo-500 ${
+              className={`relative text-muted-foreground font-medium text-lg transition-colors duration-300 hover:text-indigo-500 ${
                 activeSection === item.href.replace("#", "")
                   ? "text-indigo-500"
                   : ""
@@ -86,7 +87,8 @@ const Navbar = () => {
 
         {/* Socials & Hamburger */}
         <div className="flex items-center space-x-4">
-          <div className="hidden md:flex space-x-6 text-gray-400">
+          <ThemeToggle />
+          <div className="hidden md:flex space-x-6 text-muted-foreground">
             <a
               href="https://github.com/ssSobuj"
               target="_blank"
@@ -109,7 +111,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-300 hover:text-indigo-500 focus:outline-none"
+            className="md:hidden text-muted-foreground hover:text-indigo-500 focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -119,14 +121,14 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-900 border-t border-gray-800">
+        <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col px-6 py-4 space-y-4">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={(e) => handleSmoothScroll(e, item.href)}
-                className={`text-gray-300 hover:text-indigo-500 font-medium text-lg ${
+                className={`text-muted-foreground hover:text-indigo-500 font-medium text-lg ${
                   activeSection === item.href.replace("#", "")
                     ? "text-indigo-500"
                     : ""
@@ -136,12 +138,12 @@ const Navbar = () => {
               </a>
             ))}
 
-            <div className="flex space-x-6 pt-4 border-t border-gray-800">
+            <div className="flex space-x-6 pt-4 border-t border-border">
               <a
                 href="https://github.com/ssSobuj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-indigo-500"
+                className="text-muted-foreground hover:text-indigo-500"
               >
                 <Github size={24} />
               </a>
@@ -149,7 +151,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/developer-sabuj-mia/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-indigo-500"
+                className="text-muted-foreground hover:text-indigo-500"
               >
                 <Linkedin size={24} />
               </a>
