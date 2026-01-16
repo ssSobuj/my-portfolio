@@ -127,8 +127,8 @@ import {
 const Skills = () => {
   const skills = {
     language: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
-    database: ["MongoDB Atlas", "Mongoose"],
-    styling: ["SASS/SCSS", "Tailwind CSS", "Bootstrap"],
+    database: ["MongoDB Atlas", "Mongoose", "SQL", "PostgreSQL", "Redis"],
+    styling: ["SASS/SCSS", "Tailwind CSS", "Bootstrap", "shadcn/ui"],
     frontend: [
       "React.js",
       "Next.js",
@@ -136,11 +136,14 @@ const Skills = () => {
       "Nuxt.js",
       "React Hook Form",
       "Redux Toolkit",
+      "Zustand",
     ],
     backend: ["Node.js", "Express.js", "REST APIs", "NextAuth.js"],
     tools: [
       "Git/GitHub",
       "VS Code",
+      "Cursor",
+      "Entegravity",
       "Figma",
       "Postman",
       "Firebase",

@@ -12,22 +12,21 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white mb-4">
-              Frontend Developer with Full-Stack Vision
+              Full-Stack Developer Building End-to-End Products
             </h3>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a passionate frontend developer who specializes in creating
-              exceptional digital experiences. With expertise in modern
-              JavaScript frameworks like React.js, Next.js, Vue.js, and Nuxt.js,
-              I bring ideas to life through clean, efficient code.
+              I'm a full-stack developer who builds modern web experiences from
+              UI to API. I specialize in React and Next.js on the frontend and
+              Node.js with REST APIs on the backend, delivering clean,
+              maintainable code.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              My journey in web development has led me to work on diverse
-              projects, from e-commerce platforms to learning management systems
-              and AI-powered applications. I believe in writing maintainable
-              code that not only works flawlessly but also provides an
-              outstanding user experience.
+              I work with SQL and PostgreSQL alongside MongoDB and Redis,
+              choosing the right data model for each feature. My focus is on
+              scalable architecture, performance, and product polish across the
+              stack.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -38,7 +37,7 @@ const About = () => {
 
             <div className="flex flex-wrap gap-4 mt-8">
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">1.5+</span>
+                <span className="text-indigo-400 font-semibold">2+</span>
                 <span className="text-gray-300 ml-2">Years Experience</span>
               </div>
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
@@ -70,16 +69,16 @@ const About = () => {
                     name: "Sobuj Mia",
                   </div>
                   <div className="text-gray-300 text-sm ml-4">
-                    role: "Frontend Developer",
+                    role: "Full-Stack Developer",
                   </div>
                   <div className="text-gray-300 text-sm ml-4">
-                    experience: "1.5+ years",
+                    experience: "2+ years",
                   </div>
                   <div className="text-gray-300 text-sm ml-4">
                     location: "Bangladesh",
                   </div>
                   <div className="text-gray-300 text-sm ml-4">
-                    passion: "Building amazing UIs"
+                    passion: "Building end-to-end products"
                   </div>
                   <div className="text-green-400 text-sm">{`}`}</div>
                 </div>

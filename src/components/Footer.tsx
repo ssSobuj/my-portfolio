@@ -26,8 +26,8 @@ const Footer = () => {
               Sobuj<span className="text-indigo-400">.</span>
             </h3>
             <p className="text-gray-400 mb-6">
-              Frontend Developer passionate about creating exceptional digital
-              experiences with modern technologies and clean, efficient code.
+              Full-Stack Developer passionate about building end-to-end
+              products with modern technologies and clean, efficient code.
             </p>
             <div className="flex space-x-4">
               <a
@@ -66,7 +66,7 @@ const Footer = () => {
               Quick Links
             </h4>
             <div className="space-y-2">
-              {["Home", "About", "Skills", "Projects", "Contact"].map(
+              {["Home", "About", "Experience", "Skills", "Projects", "Contact"].map(
                 (link) => (
                   <a
                     key={link}
@@ -87,11 +87,12 @@ const Footer = () => {
             </h4>
             <div className="space-y-2">
               {[
-                "React.js",
                 "Next.js",
-                "Vue.js",
+                "Node.js",
+                "PostgreSQL",
+                "Redis",
                 "TypeScript",
-                "Tailwind CSS",
+                "React.js",
               ].map((tech) => (
                 <span key={tech} className="block text-gray-400">
                   {tech}

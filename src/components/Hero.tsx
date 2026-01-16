@@ -135,37 +135,6 @@ const Hero = () => {
     visible: { opacity: 1, y: 0 },
   };
 
-  // Helper function to split text into animated spans
-  const AnimatedTitle = ({ text }: { text: string }) => {
-    const highlightedWords = ["full-stack", "front-end"];
-
-    return (
-      <motion.h1
-        variants={container}
-        initial="hidden"
-        animate="visible"
-        className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-center lg:text-left"
-      >
-        {text.split(" ").map((wordText, index) => {
-          const normalized = wordText.toLowerCase().replace(/[^a-z-]/g, ""); // Remove punctuation
-          const isHighlighted = highlightedWords.includes(normalized);
-
-          return (
-            <motion.span
-              key={index}
-              variants={word}
-              className={`inline-block mr-2 ${
-                isHighlighted ? "text-indigo-400" : ""
-              }`}
-            >
-              {wordText}
-            </motion.span>
-          );
-        })}
-      </motion.h1>
-    );
-  };
-
   return (
     <section
       id="home"
@@ -188,15 +157,21 @@ const Hero = () => {
               </div>
             </motion.div>
 
-            <AnimatedTitle text="I am a Full-Stack Developer Specializing in Front-end Development" />
+            <motion.h1
+              variants={word}
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight text-center lg:text-left"
+            >
+              <span className="text-indigo-400">Full-Stack</span> Developer
+              <br />
+              building modern web apps
+            </motion.h1>
 
             <motion.p
               variants={word}
               className="text-xl text-gray-300 mb-12 leading-relaxed"
             >
-              I design and develop responsive, high-performance web
-              applications, merging cutting-edge frontend tech with robust
-              backend solutions.
+              I build fast, reliable web apps with React/Next.js, Node.js APIs,
+              and SQL/NoSQL databases.
             </motion.p>
 
             <motion.div

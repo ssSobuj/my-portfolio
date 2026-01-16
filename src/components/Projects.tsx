@@ -14,7 +14,7 @@ const Projects = () => {
       id: "cuet",
       name: "CUET Official Web Application",
       description:
-        "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
+        "Contributed to the CUET official web application, delivering responsive interfaces and integrating service data to improve the user experience.",
       image: "/projects/cuet.png",
       links: {
         live: "cuet.ac.bd",
@@ -28,7 +28,7 @@ const Projects = () => {
       id: "kireibd",
       name: "Kirai BD a e-commerce Website",
       description:
-        "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Next.js, Bootstrap, and SASS, ensuring a smooth shopping experience with real-time updates.",
+        "Built core e-commerce flows with Next.js, Bootstrap, and SASS, delivering a smooth shopping experience with API-driven data and real-time updates.",
       image: "/projects/kiraibd.png",
       links: {
         live: "kireibd.com",
@@ -42,7 +42,7 @@ const Projects = () => {
       id: "uylab",
       name: "Learning Management System",
       description:
-        "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
+        "Built the Uylab LMS experience with Next.js, SASS, and Bootstrap, integrating course data and real-time sync for smooth UX.",
       image: "/projects/uylab.png",
       links: {
         live: "uylab.org",
@@ -56,7 +56,7 @@ const Projects = () => {
       id: "jobcuet",
       name: "CUET Job Portal",
       description:
-        "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
+        "Built a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
       image: "/projects/jobcuet.png",
       links: {
         live: "jobs.cuet.ac.bd",
@@ -86,7 +86,7 @@ const Projects = () => {
       id: "mailprofessors",
       name: "Mail Professors - AI Academic Outreach Platform",
       description:
-        "Developed the frontend for an AI-powered platform that helps students find and contact university professors for research opportunities. My responsibilities included building the core user interfaces for searching professors, filtering results, and managing the AI-generated personalized emails. Leveraged Next.js and MUI to create a highly responsive and intuitive user experience.",
+        "Developed the product experience for an AI-powered platform that helps students find and contact university professors for research opportunities. Built search, filtering, and AI email workflows with Next.js and MUI for a responsive user experience.",
       image: "/projects/mailprofessors.png",
       links: {
         live: "mailprofessors.com",
@@ -101,7 +101,7 @@ const Projects = () => {
       id: "zepid",
       name: "AI Generator Platform Development",
       description:
-        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface.",
+        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and shadcn/ui, focusing on a responsive, interactive experience and service integration.",
       image: "/projects/zepid.png",
       links: {
         live: "zepid.ai",
@@ -115,7 +115,7 @@ const Projects = () => {
       id: "thetork",
       name: "The Tork Inc. Official Website Development",
       description:
-        "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and enhances user experience.",
+        "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and integrates content updates.",
       image: "/projects/thetork.png",
       links: {
         live: "thetork.com",
@@ -130,7 +130,7 @@ const Projects = () => {
       id: "meridian",
       name: "Meridian Consultancy – Immigration & Visa Solutions",
       description:
-        "Built the frontend for Meridian Consultancy using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
+        "Built the Meridian Consultancy website using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
       image: "/projects/meridian-consultancy.png",
       links: {
         live: "meridianconsultancy.com.au",
@@ -191,7 +191,7 @@ const Projects = () => {
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Here are some of the projects I've worked on, showcasing my skills
-            in frontend development
+            in full-stack development
           </p>
         </div>
 
