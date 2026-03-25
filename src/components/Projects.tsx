@@ -11,6 +11,46 @@ import {
 const Projects = () => {
   const projects = [
     {
+      id: "saas-crm-accounting",
+      name: "Multi-Tenant SaaS CRM & Accounting Platform",
+      description:
+        "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs and optimizing database performance.",
+      image: "/projects/shocchota.png",
+      links: {},
+      techs: [
+        "Next.js",
+        "Prisma",
+        "MySQL",
+        "React Query",
+        "Zustand",
+        "Socket.io",
+        "Tailwind CSS",
+        "ShadCN UI",
+      ],
+      hasImage: true,
+      type: "fullstack",
+      role: "Full-Stack Developer",
+    },
+    {
+      id: "aurora-bangladesh",
+      name: "Aurora Bangladesh - E-commerce Platform",
+      description:
+        "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components.",
+      image: "/projects/aurora.png",
+      links: {},
+      techs: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "ShadCN UI",
+      ],
+      hasImage: true,
+      type: "fullstack",
+      role: "Full-Stack Developer",
+    },
+    {
       id: "cuet",
       name: "CUET Official Web Application",
       description:
@@ -285,22 +325,32 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <a
-                    href={`https://${project.links.live}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-semibold group/link"
-                  >
-                    View Live
-                    <ArrowUp
-                      className="ml-1 transform rotate-45 transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
-                      size={16}
-                    />
-                  </a>
+                  {project.links.live ? (
+                    <a
+                      href={`https://${project.links.live}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-semibold group/link"
+                    >
+                      View Live
+                      <ArrowUp
+                        className="ml-1 transform rotate-45 transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+                        size={16}
+                      />
+                    </a>
+                  ) : (
+                    <span className="text-gray-500 text-sm font-semibold">
+                      Private Project
+                    </span>
+                  )}
 
                   <div className="flex items-center text-gray-500 text-xs">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                    Live
+                    <span
+                      className={`w-2 h-2 rounded-full mr-2 ${
+                        project.links.live ? "bg-green-500 animate-pulse" : "bg-gray-500"
+                      }`}
+                    ></span>
+                    {project.links.live ? "Live" : "Internal"}
                   </div>
                 </div>
               </div>
