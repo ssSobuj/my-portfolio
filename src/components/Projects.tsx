@@ -16,7 +16,7 @@ const Projects = () => {
       description:
         "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs and optimizing database performance.",
       image: "/projects/shocchota.png",
-      links: {},
+      links: {live:"landing-page-shocchota.vercel.app"},
       techs: [
         "Next.js",
         "Prisma",
@@ -37,7 +37,9 @@ const Projects = () => {
       description:
         "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components.",
       image: "/projects/aurora.png",
-      links: {},
+      links: {
+        live: "aurorabangladesh.com",
+      },
       techs: [
         "Next.js",
         "TypeScript",

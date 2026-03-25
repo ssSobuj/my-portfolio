@@ -116,47 +116,76 @@
 // export default Skills;
 import React from "react";
 import {
-  Code,
   MonitorSmartphone,
   Server,
   Palette,
-  Database,
   Briefcase,
+  Sparkles,
 } from "lucide-react";
 
 const Skills = () => {
   const skills = {
-    language: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
-    database: ["MongoDB Atlas", "Mongoose"],
-    styling: ["SASS/SCSS", "Tailwind CSS", "Bootstrap"],
     frontend: [
       "React.js",
       "Next.js",
-      "Vue.js",
-      "Nuxt.js",
-      "React Hook Form",
+      "TypeScript",
+      "JavaScript (ES6+)",
       "Redux Toolkit",
+      "Zustand",
+      "React Hook Form",
     ],
-    backend: ["Node.js", "Express.js", "REST APIs", "NextAuth.js"],
-    tools: [
-      "Git/GitHub",
-      "VS Code",
-      "Figma",
-      "Postman",
+    backend: [
+      "Node.js",
+      "REST APIs",
+      "Prisma",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
       "Firebase",
+      "JWT",
+    ],
+    aiTools: [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Cursor",
+      "Claude Code",
+      "Gemini",
+      "Anti-Gravity",
+      "Trae",
+    ],
+    stylingUi: [
+      "Tailwind CSS",
+      "ShadCN UI",
+      "SCSS",
+      "Bootstrap",
+      "Responsive Web Design",
+      "CSS Modules",
+      "Figma",
+    ],
+    toolsPerformance: [
+      "Git",
+      "GitHub",
+      "Bitbucket",
       "Vercel",
-      "Jira",
+      "Postman",
+      "SSR",
+      "CSR",
+      "SEO Best Practices",
+      "SWR",
     ],
   };
 
   // Simplified data structure, no more colors needed
   const skillCategories = [
-    { title: "Languages", skills: skills.language, icon: <Code /> },
     { title: "Frontend", skills: skills.frontend, icon: <MonitorSmartphone /> },
     { title: "Backend", skills: skills.backend, icon: <Server /> },
-    { title: "Styling", skills: skills.styling, icon: <Palette /> },
-    { title: "Database", skills: skills.database, icon: <Database /> },
-    { title: "Tools & Platforms", skills: skills.tools, icon: <Briefcase /> },
+    { title: "AI Tools", skills: skills.aiTools, icon: <Sparkles /> },
+    { title: "Styling & UI", skills: skills.stylingUi, icon: <Palette /> },
+    {
+      title: "Tools & Performance",
+      skills: skills.toolsPerformance,
+      icon: <Briefcase />,
+    },
   ];
 
   return (
