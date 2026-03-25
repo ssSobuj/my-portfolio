@@ -11,10 +11,52 @@ import {
 const Projects = () => {
   const projects = [
     {
+      id: "saas-crm-accounting",
+      name: "Multi-Tenant SaaS CRM & Accounting Platform",
+      description:
+        "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs and optimizing database performance.",
+      image: "/projects/shocchota.png",
+      links: {live:"landing-page-shocchota.vercel.app"},
+      techs: [
+        "Next.js",
+        "Prisma",
+        "MySQL",
+        "React Query",
+        "Zustand",
+        "Socket.io",
+        "Tailwind CSS",
+        "ShadCN UI",
+      ],
+      hasImage: true,
+      type: "fullstack",
+      role: "Full-Stack Developer",
+    },
+    {
+      id: "aurora-bangladesh",
+      name: "Aurora Bangladesh - E-commerce Platform",
+      description:
+        "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components.",
+      image: "/projects/aurora.png",
+      links: {
+        live: "aurorabangladesh.com",
+      },
+      techs: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "ShadCN UI",
+      ],
+      hasImage: true,
+      type: "fullstack",
+      role: "Full-Stack Developer",
+    },
+    {
       id: "cuet",
       name: "CUET Official Web Application",
       description:
-        "Contributed to the CUET official web application, delivering responsive interfaces and integrating service data to improve the user experience.",
+        "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
       image: "/projects/cuet.png",
       links: {
         live: "cuet.ac.bd",
@@ -28,7 +70,7 @@ const Projects = () => {
       id: "kireibd",
       name: "Kirai BD a e-commerce Website",
       description:
-        "Built core e-commerce flows with Next.js, Bootstrap, and SASS, delivering a smooth shopping experience with API-driven data and real-time updates.",
+        "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Next.js, Bootstrap, and SASS, ensuring a smooth shopping experience with real-time updates.",
       image: "/projects/kiraibd.png",
       links: {
         live: "kireibd.com",
@@ -42,7 +84,7 @@ const Projects = () => {
       id: "uylab",
       name: "Learning Management System",
       description:
-        "Built the Uylab LMS experience with Next.js, SASS, and Bootstrap, integrating course data and real-time sync for smooth UX.",
+        "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
       image: "/projects/uylab.png",
       links: {
         live: "uylab.org",
@@ -56,7 +98,7 @@ const Projects = () => {
       id: "jobcuet",
       name: "CUET Job Portal",
       description:
-        "Built a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
+        "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
       image: "/projects/jobcuet.png",
       links: {
         live: "jobs.cuet.ac.bd",
@@ -86,7 +128,7 @@ const Projects = () => {
       id: "mailprofessors",
       name: "Mail Professors - AI Academic Outreach Platform",
       description:
-        "Developed the product experience for an AI-powered platform that helps students find and contact university professors for research opportunities. Built search, filtering, and AI email workflows with Next.js and MUI for a responsive user experience.",
+        "Developed the frontend for an AI-powered platform that helps students find and contact university professors for research opportunities. My responsibilities included building the core user interfaces for searching professors, filtering results, and managing the AI-generated personalized emails. Leveraged Next.js and MUI to create a highly responsive and intuitive user experience.",
       image: "/projects/mailprofessors.png",
       links: {
         live: "mailprofessors.com",
@@ -101,7 +143,7 @@ const Projects = () => {
       id: "zepid",
       name: "AI Generator Platform Development",
       description:
-        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and shadcn/ui, focusing on a responsive, interactive experience and service integration.",
+        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface.",
       image: "/projects/zepid.png",
       links: {
         live: "zepid.ai",
@@ -115,7 +157,7 @@ const Projects = () => {
       id: "thetork",
       name: "The Tork Inc. Official Website Development",
       description:
-        "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and integrates content updates.",
+        "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and enhances user experience.",
       image: "/projects/thetork.png",
       links: {
         live: "thetork.com",
@@ -130,7 +172,7 @@ const Projects = () => {
       id: "meridian",
       name: "Meridian Consultancy – Immigration & Visa Solutions",
       description:
-        "Built the Meridian Consultancy website using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
+        "Built the frontend for Meridian Consultancy using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
       image: "/projects/meridian-consultancy.png",
       links: {
         live: "meridianconsultancy.com.au",
@@ -158,13 +200,13 @@ const Projects = () => {
   const getProjectTypeColor = (type) => {
     switch (type) {
       case "professional":
-        return "bg-indigo-100 text-indigo-700 border-indigo-200 dark:bg-indigo-900/70 dark:text-indigo-300 dark:border-indigo-600/50";
+        return "bg-indigo-900/70 text-indigo-300 border-indigo-600/50";
       case "personal":
-        return "bg-green-100 text-green-700 border-green-200 dark:bg-green-900/70 dark:text-green-300 dark:border-green-600/50";
+        return "bg-green-900/70 text-green-300 border-green-600/50";
       case "fullstack":
-        return "bg-purple-100 text-purple-700 border-purple-200 dark:bg-purple-900/70 dark:text-purple-300 dark:border-purple-600/50";
+        return "bg-purple-900/70 text-purple-300 border-purple-600/50";
       default:
-        return "bg-indigo-100 text-indigo-700 border-indigo-200 dark:bg-indigo-900/70 dark:text-indigo-300 dark:border-indigo-600/50";
+        return "bg-indigo-900/70 text-indigo-300 border-indigo-600/50";
     }
   };
 
@@ -182,16 +224,16 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Here are some of the projects I've worked on, showcasing my skills
-            in full-stack development
+            in frontend development
           </p>
         </div>
 
@@ -199,7 +241,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="bg-card rounded-2xl overflow-hidden border border-border hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 group shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20"
+              className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 group shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -241,18 +283,18 @@ const Projects = () => {
 
               <div className="p-8">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-foreground group-hover:text-indigo-400 transition-colors duration-300 line-clamp-2 flex-1">
+                  <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300 line-clamp-2 flex-1">
                     {project.name}
                   </h3>
                 </div>
 
                 <div className="mb-4">
-                  <span className="inline-block px-3 py-1 bg-muted border border-border text-muted-foreground text-xs rounded-full font-medium">
+                  <span className="inline-block px-3 py-1 bg-gray-800 border border-gray-600 text-gray-300 text-xs rounded-full font-medium">
                     {project.role}
                   </span>
                 </div>
 
-                <p className="text-muted-foreground text-sm mb-6 line-clamp-4 leading-relaxed">
+                <p className="text-gray-400 text-sm mb-6 line-clamp-4 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -263,7 +305,7 @@ const Projects = () => {
                       href={`https://${project.links.github_frontend}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-muted-foreground hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
+                      className="flex items-center text-gray-400 hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
                     >
                       <Github size={16} className="mr-2" />
                       Frontend Code
@@ -276,7 +318,7 @@ const Projects = () => {
                       href={`https://${project.links.github_backend}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-muted-foreground hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
+                      className="flex items-center text-gray-400 hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
                     >
                       <Github size={16} className="mr-2" />
                       Backend Code
@@ -285,22 +327,32 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <a
-                    href={`https://${project.links.live}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-semibold group/link"
-                  >
-                    View Live
-                    <ArrowUp
-                      className="ml-1 transform rotate-45 transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
-                      size={16}
-                    />
-                  </a>
+                  {project.links.live ? (
+                    <a
+                      href={`https://${project.links.live}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-semibold group/link"
+                    >
+                      View Live
+                      <ArrowUp
+                        className="ml-1 transform rotate-45 transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+                        size={16}
+                      />
+                    </a>
+                  ) : (
+                    <span className="text-gray-500 text-sm font-semibold">
+                      Private Project
+                    </span>
+                  )}
 
-                  <div className="flex items-center text-muted-foreground text-xs">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                    Live
+                  <div className="flex items-center text-gray-500 text-xs">
+                    <span
+                      className={`w-2 h-2 rounded-full mr-2 ${
+                        project.links.live ? "bg-green-500 animate-pulse" : "bg-gray-500"
+                      }`}
+                    ></span>
+                    {project.links.live ? "Live" : "Internal"}
                   </div>
                 </div>
               </div>
@@ -313,7 +365,7 @@ const Projects = () => {
             href="https://github.com/ssSobuj"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-muted hover:bg-muted/80 text-foreground rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 bg-gray-700 hover:bg-gray-600 text-white rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <Github className="mr-3" size={24} />
             View More on GitHub

@@ -116,62 +116,87 @@
 // export default Skills;
 import React from "react";
 import {
-  Code,
   MonitorSmartphone,
   Server,
   Palette,
-  Database,
   Briefcase,
+  Sparkles,
 } from "lucide-react";
 
 const Skills = () => {
   const skills = {
-    language: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
-    database: ["MongoDB Atlas", "Mongoose", "SQL", "PostgreSQL", "Redis"],
-    styling: ["SASS/SCSS", "Tailwind CSS", "Bootstrap", "shadcn/ui"],
     frontend: [
       "React.js",
       "Next.js",
-      "Vue.js",
-      "Nuxt.js",
-      "React Hook Form",
+      "TypeScript",
+      "JavaScript (ES6+)",
       "Redux Toolkit",
       "Zustand",
-      "React Query",
+      "React Hook Form",
     ],
-    backend: ["Node.js", "Express.js", "REST APIs", "NextAuth.js"],
-    tools: [
-      "Git/GitHub",
-      "VS Code",
-      "Cursor",
-      "Entegravity",
-      "Figma",
-      "Postman",
+    backend: [
+      "Node.js",
+      "REST APIs",
+      "Prisma",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
       "Firebase",
+      "JWT",
+    ],
+    aiTools: [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Cursor",
+      "Claude Code",
+      "Gemini",
+      "Anti-Gravity",
+      "Trae",
+    ],
+    stylingUi: [
+      "Tailwind CSS",
+      "ShadCN UI",
+      "SCSS",
+      "Bootstrap",
+      "Responsive Web Design",
+      "CSS Modules",
+      "Figma",
+    ],
+    toolsPerformance: [
+      "Git",
+      "GitHub",
+      "Bitbucket",
       "Vercel",
-      "Jira",
+      "Postman",
+      "SSR",
+      "CSR",
+      "SEO Best Practices",
+      "SWR",
     ],
   };
 
   // Simplified data structure, no more colors needed
   const skillCategories = [
-    { title: "Languages", skills: skills.language, icon: <Code /> },
     { title: "Frontend", skills: skills.frontend, icon: <MonitorSmartphone /> },
     { title: "Backend", skills: skills.backend, icon: <Server /> },
-    { title: "Styling", skills: skills.styling, icon: <Palette /> },
-    { title: "Database", skills: skills.database, icon: <Database /> },
-    { title: "Tools & Platforms", skills: skills.tools, icon: <Briefcase /> },
+    { title: "AI Tools", skills: skills.aiTools, icon: <Sparkles /> },
+    { title: "Styling & UI", skills: skills.stylingUi, icon: <Palette /> },
+    {
+      title: "Tools & Performance",
+      skills: skills.toolsPerformance,
+      icon: <Briefcase />,
+    },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-muted">
+    <section id="skills" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Skills & Technologies
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             A snapshot of the primary tools and technologies I use to build
             modern web applications.
           </p>
@@ -182,22 +207,22 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-card rounded-xl p-6 border border-border hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
+              className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
             >
               <div className="flex items-center mb-4">
                 <div className="text-indigo-400 mr-4">
                   {React.cloneElement(category.icon, { size: 24 })}
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
+                <h3 className="text-xl font-semibold text-white">
                   {category.title}
                 </h3>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-700">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-muted border border-border text-muted-foreground rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gray-900 border border-gray-600 text-gray-300 rounded-full text-sm font-medium"
                   >
                     {skill}
                   </span>
@@ -208,7 +233,7 @@ const Skills = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-muted-foreground text-lg">
+          <p className="text-gray-400 text-lg">
             Always learning and exploring new technologies to stay ahead of the
             curve.
           </p>
