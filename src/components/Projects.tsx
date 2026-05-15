@@ -200,13 +200,13 @@ const Projects = () => {
   const getProjectTypeColor = (type) => {
     switch (type) {
       case "professional":
-        return "bg-indigo-900/70 text-indigo-300 border-indigo-600/50";
+        return "bg-indigo-100 text-indigo-700 border-indigo-200 dark:bg-indigo-900/70 dark:text-indigo-300 dark:border-indigo-600/50";
       case "personal":
-        return "bg-green-900/70 text-green-300 border-green-600/50";
+        return "bg-green-100 text-green-700 border-green-200 dark:bg-green-900/70 dark:text-green-300 dark:border-green-600/50";
       case "fullstack":
-        return "bg-purple-900/70 text-purple-300 border-purple-600/50";
+        return "bg-violet-100 text-violet-700 border-violet-200 dark:bg-violet-900/70 dark:text-violet-300 dark:border-violet-600/50";
       default:
-        return "bg-indigo-900/70 text-indigo-300 border-indigo-600/50";
+        return "bg-indigo-100 text-indigo-700 border-indigo-200 dark:bg-indigo-900/70 dark:text-indigo-300 dark:border-indigo-600/50";
     }
   };
 
@@ -224,14 +224,14 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gray-800">
+    <section id="projects" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Here are some of the projects I've worked on, showcasing my skills
             in frontend development
           </p>
@@ -241,7 +241,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 group shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20"
+              className="bg-card rounded-2xl overflow-hidden border border-border hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 group shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -283,18 +283,18 @@ const Projects = () => {
 
               <div className="p-8">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300 line-clamp-2 flex-1">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-indigo-400 transition-colors duration-300 line-clamp-2 flex-1">
                     {project.name}
                   </h3>
                 </div>
 
                 <div className="mb-4">
-                  <span className="inline-block px-3 py-1 bg-gray-800 border border-gray-600 text-gray-300 text-xs rounded-full font-medium">
+                  <span className="inline-block px-3 py-1 bg-muted border border-border text-muted-foreground text-xs rounded-full font-medium">
                     {project.role}
                   </span>
                 </div>
 
-                <p className="text-gray-400 text-sm mb-6 line-clamp-4 leading-relaxed">
+                <p className="text-muted-foreground text-sm mb-6 line-clamp-4 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -305,7 +305,7 @@ const Projects = () => {
                       href={`https://${project.links.github_frontend}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-400 hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
+                      className="flex items-center text-muted-foreground hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
                     >
                       <Github size={16} className="mr-2" />
                       Frontend Code
@@ -318,7 +318,7 @@ const Projects = () => {
                       href={`https://${project.links.github_backend}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-400 hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
+                      className="flex items-center text-muted-foreground hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
                     >
                       <Github size={16} className="mr-2" />
                       Backend Code
@@ -341,15 +341,15 @@ const Projects = () => {
                       />
                     </a>
                   ) : (
-                    <span className="text-gray-500 text-sm font-semibold">
-                      Private Project
-                    </span>
-                  )}
+                      <span className="text-muted-foreground text-sm font-semibold">
+                        Private Project
+                      </span>
+                    )}
 
-                  <div className="flex items-center text-gray-500 text-xs">
+                  <div className="flex items-center text-muted-foreground text-xs">
                     <span
                       className={`w-2 h-2 rounded-full mr-2 ${
-                        project.links.live ? "bg-green-500 animate-pulse" : "bg-gray-500"
+                        project.links.live ? "bg-green-500 animate-pulse" : "bg-muted-foreground/50"
                       }`}
                     ></span>
                     {project.links.live ? "Live" : "Internal"}
@@ -365,7 +365,7 @@ const Projects = () => {
             href="https://github.com/ssSobuj"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-gray-700 hover:bg-gray-600 text-white rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 bg-card hover:bg-accent border border-border text-foreground rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <Github className="mr-3" size={24} />
             View More on GitHub
