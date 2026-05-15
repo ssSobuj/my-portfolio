@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Github,
   ArrowUp,
@@ -7,183 +8,9 @@ import {
   User,
   Layers,
 } from "lucide-react";
+import { projects } from "@/data/projects";
 
 const Projects = () => {
-  const projects = [
-    {
-      id: "saas-crm-accounting",
-      name: "Multi-Tenant SaaS CRM & Accounting Platform",
-      description:
-        "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs, optimizing database performance, and accelerating delivery with AI-assisted implementation and debugging workflows.",
-      image: "/projects/shocchota.png",
-      links: {live:"landing-page-shocchota.vercel.app"},
-      techs: [
-        "Next.js",
-        "Prisma",
-        "MySQL",
-        "React Query",
-        "Zustand",
-        "Socket.io",
-        "Tailwind CSS",
-        "ShadCN UI",
-      ],
-      hasImage: true,
-      type: "fullstack",
-      role: "Full-Stack Developer",
-    },
-    {
-      id: "aurora-bangladesh",
-      name: "Aurora Bangladesh - E-commerce Platform",
-      description:
-        "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components and AI-supported rapid iteration.",
-      image: "/projects/aurora.png",
-      links: {
-        live: "aurorabangladesh.com",
-      },
-      techs: [
-        "Next.js",
-        "TypeScript",
-        "PostgreSQL",
-        "Prisma",
-        "Tailwind CSS",
-        "ShadCN UI",
-      ],
-      hasImage: true,
-      type: "fullstack",
-      role: "Full-Stack Developer",
-    },
-    {
-      id: "cuet",
-      name: "CUET Official Web Application",
-      description:
-        "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
-      image: "/projects/cuet.png",
-      links: {
-        live: "cuet.ac.bd",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-    {
-      id: "kireibd",
-      name: "Kirai BD a e-commerce Website",
-      description:
-        "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Next.js, Bootstrap, and SASS, ensuring a smooth shopping experience with real-time updates.",
-      image: "/projects/kiraibd.png",
-      links: {
-        live: "kireibd.com",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-    {
-      id: "uylab",
-      name: "Learning Management System",
-      description:
-        "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
-      image: "/projects/uylab.png",
-      links: {
-        live: "uylab.org",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-    {
-      id: "jobcuet",
-      name: "CUET Job Portal",
-      description:
-        "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
-      image: "/projects/jobcuet.png",
-      links: {
-        live: "jobs.cuet.ac.bd",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-    {
-      id: "story-nest",
-      name: "Story Nest - Full-Stack Publishing Platform",
-      description:
-        "A full-stack story-telling platform where users can write, publish, and share their stories. Features a robust authentication system with Google OAuth and JWT-based email/password login. Incorporates a multi-tiered role system (User, Admin, Super Admin) to manage content approval workflows, ensuring content quality and platform integrity.",
-      image: "/projects/story-nest.png", // IMPORTANT: See Step 2 below
-      links: {
-        live: "story-nest-topaz.vercel.app",
-        github_frontend: "github.com/ssSobuj/storyNestFrontend",
-        github_backend: "github.com/ssSobuj/storyNestServer",
-      },
-      techs: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "JWT"],
-      hasImage: true,
-      type: "personal", // This will give it the green "Personal" tag
-      role: "Full-Stack Developer",
-    },
-    {
-      id: "mailprofessors",
-      name: "Mail Professors - AI Academic Outreach Platform",
-      description:
-        "Developed the frontend for an AI-powered platform that helps students find and contact university professors for research opportunities. My responsibilities included building the core user interfaces for searching professors, filtering results, and managing AI-generated personalized emails. Leveraged Next.js and MUI to create a highly responsive and intuitive user experience.",
-      image: "/projects/mailprofessors.png",
-      links: {
-        live: "mailprofessors.com",
-      },
-      techs: ["Next.js", "MUI", "TypeScript", "AI Integration"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-
-    {
-      id: "zepid",
-      name: "AI Generator Platform Development",
-      description:
-        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface with production-ready frontend workflows.",
-      image: "/projects/zepid.png",
-      links: {
-        live: "zepid.ai",
-      },
-      techs: ["NextJs", "Tailwind", "TypeScript"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-    {
-      id: "thetork",
-      name: "The Tork Inc. Official Website Development",
-      description:
-        "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and enhances user experience.",
-      image: "/projects/thetork.png",
-      links: {
-        live: "thetork.com",
-      },
-      techs: ["NextJs", "Bootstrap", "SCSS"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-
-    {
-      id: "meridian",
-      name: "Meridian Consultancy – Immigration & Visa Solutions",
-      description:
-        "Built the frontend for Meridian Consultancy using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
-      image: "/projects/meridian-consultancy.png",
-      links: {
-        live: "meridianconsultancy.com.au",
-      },
-      techs: ["NextJs", "Css"],
-      hasImage: true,
-      type: "professional",
-      role: "Frontend Developer",
-    },
-  ];
-
   const getProjectTypeIcon = (type) => {
     switch (type) {
       case "professional":
@@ -239,7 +66,7 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.id}
               className="bg-card rounded-2xl overflow-hidden border border-border hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 group shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20"
@@ -328,24 +155,32 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  {project.links.live ? (
-                    <a
-                      href={`https://${project.links.live}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-semibold group/link"
+                  <div className="flex items-center gap-4">
+                    <Link
+                      to={`/projects/${project.id}`}
+                      className="text-sm font-semibold text-foreground hover:text-indigo-400 transition-colors duration-200"
                     >
-                      View Live
-                      <ArrowUp
-                        className="ml-1 transform rotate-45 transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
-                        size={16}
-                      />
-                    </a>
-                  ) : (
+                      View Details
+                    </Link>
+                    {project.links.live ? (
+                      <a
+                        href={`https://${project.links.live}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-semibold group/link"
+                      >
+                        View Live
+                        <ArrowUp
+                          className="ml-1 transform rotate-45 transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+                          size={16}
+                        />
+                      </a>
+                    ) : (
                       <span className="text-muted-foreground text-sm font-semibold">
                         Private Project
                       </span>
                     )}
+                  </div>
 
                   <div className="flex items-center text-muted-foreground text-xs">
                     <span
