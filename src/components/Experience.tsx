@@ -12,7 +12,7 @@ const Experience = () => {
       location: "Mirpur, Dhaka, Bangladesh",
       mode: "On-site",
       summary:
-        "Refactored complex Prisma queries and indexing to reduce latency, migrated legacy modules into a type-safe TypeScript design system, and collaborated on PostgreSQL schema optimization for high-traffic dashboards with zero-downtime releases.",
+        "Refactored complex Prisma queries and indexing to reduce latency, migrated legacy modules into a type-safe TypeScript design system, and collaborated on PostgreSQL schema optimization for high-traffic dashboards with zero-downtime releases, supported by AI-assisted debugging and review workflows.",
     },
     {
       company: "Boost Rava",
@@ -23,7 +23,7 @@ const Experience = () => {
       location: "Dhaka, Bangladesh",
       mode: "Remote",
       summary:
-        "Led a mobile-first analytics dashboard redesign with interactive charts and responsive CSS Grid layouts, improved app performance by 30% through lazy loading and code splitting, and synchronized live ad performance data with Redux Toolkit for accurate real-time reporting.",
+        "Led a mobile-first analytics dashboard redesign with interactive charts and responsive CSS Grid layouts, improved app performance by 30% through lazy loading and code splitting, and synchronized live ad performance data with Redux Toolkit for accurate real-time reporting while using AI tools to speed up iteration cycles.",
     },
     {
       company: "The Tork",
@@ -34,7 +34,7 @@ const Experience = () => {
       location: "Dhaka, Bangladesh",
       mode: "On-site",
       summary:
-        "Managed UI/UX delivery for an enterprise LMS, reduced drop-off in complex registration flows with persistent local-storage sync, and redesigned dashboard information architecture with a modular front-end system.",
+        "Managed UI/UX delivery for an enterprise LMS, reduced drop-off in complex registration flows with persistent local-storage sync, and redesigned dashboard information architecture with a modular front-end system using AI-assisted implementation support.",
     },
     {
       company: "The Tork",
@@ -45,7 +45,7 @@ const Experience = () => {
       location: "Dhaka, Bangladesh",
       mode: "On-site",
       summary:
-        "Built and shipped responsive product features with React and Next.js, supported component-level refactors for better maintainability, and collaborated with senior developers on production-ready UI workflows.",
+        "Built and shipped responsive product features with React and Next.js, supported component-level refactors for better maintainability, and collaborated with senior developers on production-ready UI workflows with AI-supported code refinement.",
     },
     {
       company: "The Tork",
@@ -57,7 +57,7 @@ const Experience = () => {
         "Block-G, The Tork (Dhaka Head Office), House-32 Rd 01, Dhaka 1219",
       mode: "On-site",
       summary:
-        "Contributed to front-end feature development using React and Next.js, translated design requirements into reusable UI sections, and learned team delivery workflows, code review, and release practices.",
+        "Contributed to front-end feature development using React and Next.js, translated design requirements into reusable UI sections, and learned team delivery workflows, code review, and release practices including AI-assisted productivity techniques.",
     },
   ];
 

@@ -145,13 +145,13 @@ const Skills = () => {
       "JWT",
     ],
     aiTools: [
-      "ChatGPT",
+      "OpenAI API",
+      "Claude",
       "GitHub Copilot",
       "Cursor",
-      "Claude Code",
-      "Gemini",
-      "Anti-Gravity",
-      "Trae",
+      "Prompt Engineering for Dev Tasks",
+      "AI-Assisted Code Review",
+      "LLM Workflow Prototyping",
     ],
     stylingUi: [
       "Tailwind CSS",
@@ -179,7 +179,7 @@ const Skills = () => {
   const skillCategories = [
     { title: "Frontend", skills: skills.frontend, icon: <MonitorSmartphone /> },
     { title: "Backend", skills: skills.backend, icon: <Server /> },
-    { title: "AI Tools", skills: skills.aiTools, icon: <Sparkles /> },
+    { title: "AI Workflow & Tools", skills: skills.aiTools, icon: <Sparkles /> },
     { title: "Styling & UI", skills: skills.stylingUi, icon: <Palette /> },
     {
       title: "Tools & Performance",

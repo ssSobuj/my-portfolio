@@ -12,7 +12,8 @@ const Contact = () => {
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Have a project in mind? Let's discuss how we can work together to
-            bring your ideas to life.
+            bring your ideas to life with full-stack engineering and modern
+            AI-enhanced development workflows.
           </p>
         </div>
 
@@ -25,6 +26,8 @@ const Contact = () => {
               I'm always interested in hearing about new projects and
               opportunities. Whether you're a company looking to hire, or you're
               a developer looking to collaborate, I'd love to hear from you.
+              I bring full-stack execution with practical experience using
+              Claude, OpenAI, and Copilot in real development workflows.
             </p>
           </div>
 

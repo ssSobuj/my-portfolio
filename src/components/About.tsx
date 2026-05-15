@@ -24,15 +24,16 @@ const About = () => {
 
             <p className="text-muted-foreground text-lg leading-relaxed">
               I work with SQL and PostgreSQL alongside MongoDB and Redis,
-              choosing the right data model for each feature. My focus is on
-              scalable architecture, performance, and product polish across the
-              stack.
+              choosing the right data model for each feature. I also use
+              AI-assisted development workflows with Claude, OpenAI, and
+              GitHub Copilot for faster prototyping, smarter debugging, and
+              safer refactoring.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              When I'm not coding, I'm exploring new technologies, contributing
-              to open-source projects, and staying updated with the latest
-              trends in web development.
+              My focus is on scalable architecture, performance, and product
+              polish across the stack while using modern AI tools to improve
+              delivery speed and maintain strong engineering quality.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
@@ -83,6 +84,9 @@ const About = () => {
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
                     passion: "Building end-to-end products"
+                  </div>
+                  <div className="text-muted-foreground text-sm ml-4">
+                    aiWorkflow: "Claude, OpenAI, Copilot"
                   </div>
                   <div className="text-green-400 text-sm">{`}`}</div>
                 </div>

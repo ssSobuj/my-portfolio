@@ -27,7 +27,8 @@ const Footer = () => {
             </h3>
             <p className="text-muted-foreground mb-6">
               Full-Stack Developer passionate about building end-to-end
-              products with modern technologies and clean, efficient code.
+              products with modern technologies, clean engineering practices,
+              and AI-assisted workflows.
             </p>
             <div className="flex space-x-4">
               <a
@@ -90,9 +91,9 @@ const Footer = () => {
                 "Next.js",
                 "Node.js",
                 "PostgreSQL",
-                "Redis",
+                "OpenAI",
                 "TypeScript",
-                "React.js",
+                "Claude",
               ].map((tech) => (
                 <span key={tech} className="block text-muted-foreground">
                   {tech}

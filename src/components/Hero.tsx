@@ -171,7 +171,9 @@ const Hero = () => {
               className="text-xl text-muted-foreground mb-12 leading-relaxed"
             >
               I build fast, reliable web apps with React/Next.js, Node.js APIs,
-              and SQL/NoSQL databases.
+              and SQL/NoSQL databases, while using AI-assisted workflows with
+              Claude, OpenAI, and Copilot to speed up iteration and improve code
+              quality.
             </motion.p>
 
             <motion.div

@@ -14,7 +14,7 @@ const Projects = () => {
       id: "saas-crm-accounting",
       name: "Multi-Tenant SaaS CRM & Accounting Platform",
       description:
-        "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs and optimizing database performance.",
+        "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs, optimizing database performance, and accelerating delivery with AI-assisted implementation and debugging workflows.",
       image: "/projects/shocchota.png",
       links: {live:"landing-page-shocchota.vercel.app"},
       techs: [
@@ -35,7 +35,7 @@ const Projects = () => {
       id: "aurora-bangladesh",
       name: "Aurora Bangladesh - E-commerce Platform",
       description:
-        "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components.",
+        "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components and AI-supported rapid iteration.",
       image: "/projects/aurora.png",
       links: {
         live: "aurorabangladesh.com",
@@ -128,7 +128,7 @@ const Projects = () => {
       id: "mailprofessors",
       name: "Mail Professors - AI Academic Outreach Platform",
       description:
-        "Developed the frontend for an AI-powered platform that helps students find and contact university professors for research opportunities. My responsibilities included building the core user interfaces for searching professors, filtering results, and managing the AI-generated personalized emails. Leveraged Next.js and MUI to create a highly responsive and intuitive user experience.",
+        "Developed the frontend for an AI-powered platform that helps students find and contact university professors for research opportunities. My responsibilities included building the core user interfaces for searching professors, filtering results, and managing AI-generated personalized emails. Leveraged Next.js and MUI to create a highly responsive and intuitive user experience.",
       image: "/projects/mailprofessors.png",
       links: {
         live: "mailprofessors.com",
@@ -143,7 +143,7 @@ const Projects = () => {
       id: "zepid",
       name: "AI Generator Platform Development",
       description:
-        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface.",
+        "Developing an AI generator platform with Next.js, TypeScript, Tailwind CSS, Radix UI, and ShadCN UI, focusing on a responsive, interactive, and visually engaging interface with production-ready frontend workflows.",
       image: "/projects/zepid.png",
       links: {
         live: "zepid.ai",
@@ -232,8 +232,9 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Here are some of the projects I've worked on, showcasing my skills
-            in frontend development
+            Here are selected projects showcasing my full-stack delivery,
+            frontend depth, and practical use of modern AI-enhanced development
+            workflows.
           </p>
         </div>
 
