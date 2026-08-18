@@ -2,6 +2,7 @@ backend:
   name: github
   repo: ssSobuj/my-portfolio
   branch: main
+  base_url: https://www.sabuj.online
   auth_endpoint: auth
 
 local_backend: true
