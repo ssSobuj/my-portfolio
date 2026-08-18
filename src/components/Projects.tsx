@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   Github,
   ArrowUp,
@@ -157,7 +157,7 @@ const Projects = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <Link
-                      to={`/projects/${project.id}`}
+                      href={`/projects/${project.id}`}
                       className="text-sm font-semibold text-foreground hover:text-indigo-400 transition-colors duration-200"
                     >
                       View Details

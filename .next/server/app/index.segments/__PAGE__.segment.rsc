@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+2:I[1264,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js","/_next/static/chunks/38e9vdgysqn1c.js","/_next/static/chunks/3h8z7-_va_2bd.js"],"default"]
+3:I[97367,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"ViewportBoundary"]
+9:I[97367,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"MetadataBoundary"]
+b:I[30824,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"Providers"]
+c:I[39756,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"default"]
+d:I[37457,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"default"]
+e:I[5125,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js","/_next/static/chunks/0bsvmyw5fsirj.js"],"default"]
+f:I[77855,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"Toaster"]
+10:I[13354,["/_next/static/chunks/3gd5ql2blr7_g.js","/_next/static/chunks/12siqke6txnp5.js"],"Toaster"]
+:HL["/_next/static/chunks/3i73hb5g3fx-v.css","style"]
+7:X
+0:{"buildId":"imRzJxdBcmhPuxhubzINi","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/38e9vdgysqn1c.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/3h8z7-_va_2bd.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Sabuj Mia Portfolio"}],["$","meta","1",{"name":"description","content":"Portfolio of Sabuj Mia"}]]}]}]}],null]}],"isPartial":"$@a","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3i73hb5g3fx-v.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3gd5ql2blr7_g.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/12siqke6txnp5.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"suppressHydrationWarning":true,"children":["$","$Lb",null,{"children":[["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[["$","$Le",null,{}],[]]}],["$","$Lf",null,{}],["$","$L10",null,{}]]}]}]}]]}],"isPartial":"$@11","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@12","rootVaryParams":null,"needsRuntimeRequest":"$@13"}
+5:null
+7:300
+13:true
+7:C
+12:0
+a:"$undefined"
+11:"$undefined"
+6:"$undefined"

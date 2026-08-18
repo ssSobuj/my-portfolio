@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: ssSobuj/my-portfolio
+  branch: nextjs-cms-migration
+  base_url: https://your-portfolio-domain.vercel.app # TODO: Update this to actual Vercel domain
+  auth_endpoint: auth
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Type", name: "type", widget: "select", options: ["professional", "personal", "fullstack"] }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Overview", name: "overview", widget: "text" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Live Link", name: "live", widget: "string", required: false }
+      - { label: "Frontend Github", name: "github_frontend", widget: "string", required: false }
+      - { label: "Backend Github", name: "github_backend", widget: "string", required: false }
+      - { label: "Frontend Work", name: "frontendWork", widget: "list" }
+      - { label: "Backend Work", name: "backendWork", widget: "list" }
+      - { label: "AI Workflow", name: "aiWorkflow", widget: "list" }
+      - { label: "Features", name: "features", widget: "list" }
+      - { label: "Tech Stack", name: "techs", widget: "list" }
+      - { label: "Outcomes", name: "outcomes", widget: "list" }

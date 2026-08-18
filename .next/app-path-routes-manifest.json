@@ -1,0 +1,8 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/auth/route": "/auth",
+  "/callback/route": "/callback",
+  "/page": "/",
+  "/projects/[id]/page": "/projects/[id]"
+}

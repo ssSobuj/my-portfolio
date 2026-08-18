@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { Github, Linkedin, Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
