@@ -9,16 +9,16 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-const Index = () => {
+const Index = ({ data }: { data: any }) => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Hero data={data.hero} />
+      <About data={data.about} />
+      <Experience data={data.experience} />
+      <Skills data={data.skills} />
+      <Projects data={data.projects} />
+      <Contact data={data.contact} />
       <Footer />
     </div>
   );

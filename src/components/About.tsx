@@ -1,60 +1,35 @@
 import React from "react";
 
-const About = () => {
+const About = ({ data }: { data: any }) => {
   return (
     <section id="about" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">{data.heading}</h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground mb-4">
-              Full-Stack Developer Building End-to-End Products
+              {data.subHeading}
             </h3>
 
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              I'm a full-stack developer who builds modern web experiences from
-              UI to API. I specialize in React and Next.js on the frontend and
-              Node.js with REST APIs on the backend, delivering clean,
-              maintainable code.
-            </p>
-
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              I work with SQL and PostgreSQL alongside MongoDB and Redis,
-              choosing the right data model for each feature. I also use
-              AI-assisted development workflows with Claude, OpenAI, and
-              GitHub Copilot for faster prototyping, smarter debugging, and
-              safer refactoring.
-            </p>
-
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              My focus is on scalable architecture, performance, and product
-              polish across the stack while using modern AI tools to improve
-              delivery speed and maintain strong engineering quality.
-            </p>
+            {data.paragraphs.map((p: string, index: number) => (
+              <p key={index} className="text-muted-foreground text-lg leading-relaxed">
+                {p}
+              </p>
+            ))}
 
             <div className="flex flex-wrap gap-4 mt-8">
-              <div className="bg-card border border-border px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">2+</span>
-                <span className="text-muted-foreground ml-2">
-                  Years Experience
-                </span>
-              </div>
-              <div className="bg-card border border-border px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">9+</span>
-                <span className="text-muted-foreground ml-2">
-                  Projects Completed
-                </span>
-              </div>
-              <div className="bg-card border border-border px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">10+</span>
-                <span className="text-muted-foreground ml-2">
-                  Technologies Mastered
-                </span>
-              </div>
+              {data.stats.map((stat: any, index: number) => (
+                <div key={index} className="bg-card border border-border px-4 py-2 rounded-lg">
+                  <span className="text-indigo-400 font-semibold">{stat.value}</span>
+                  <span className="text-muted-foreground ml-2">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -71,22 +46,22 @@ const About = () => {
                     const developer = {`{`}
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
-                    name: "Sobuj Mia",
+                    name: "{data.terminalCode.name}",
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
-                    role: "Full-Stack Developer",
+                    role: "{data.terminalCode.role}",
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
-                    experience: "2+ years",
+                    experience: "{data.terminalCode.experience}",
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
-                    location: "Bangladesh",
+                    location: "{data.terminalCode.location}",
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
-                    passion: "Building end-to-end products"
+                    passion: "{data.terminalCode.passion}"
                   </div>
                   <div className="text-muted-foreground text-sm ml-4">
-                    aiWorkflow: "Claude, OpenAI, Copilot"
+                    aiWorkflow: "{data.terminalCode.aiWorkflow}"
                   </div>
                   <div className="text-green-400 text-sm">{`}`}</div>
                 </div>

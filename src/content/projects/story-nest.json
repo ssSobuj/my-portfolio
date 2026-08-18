@@ -1,0 +1,42 @@
+{
+  "id": "story-nest",
+  "name": "Story Nest - Full-Stack Publishing Platform",
+  "description": "A full-stack story-telling platform where users can write, publish, and share their stories. Features a robust authentication system with Google OAuth and JWT-based email/password login. Incorporates a multi-tiered role system (User, Admin, Super Admin) to manage content approval workflows, ensuring content quality and platform integrity.",
+  "overview": "Story Nest is a complete publishing platform with auth, role-based moderation, and content workflow control. I built the system to support secure access and structured publishing operations.",
+  "image": "/projects/story-nest.png",
+  "links": {
+    "live": "story-nest-topaz.vercel.app",
+    "github_frontend": "github.com/ssSobuj/storyNestFrontend",
+    "github_backend": "github.com/ssSobuj/storyNestServer"
+  },
+  "techs": [
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "JWT"
+  ],
+  "hasImage": true,
+  "type": "personal",
+  "role": "Full-Stack Developer",
+  "features": [
+    "Google OAuth and JWT authentication",
+    "Role-based approval workflow",
+    "Publishing flow for user-generated stories"
+  ],
+  "frontendWork": [
+    "Built writing, publishing, and content browsing pages",
+    "Created role-aware UI states"
+  ],
+  "backendWork": [
+    "Implemented auth and role-based authorization",
+    "Designed moderation-oriented content workflows"
+  ],
+  "aiWorkflow": [
+    "Used AI for faster planning, refactor checks, and debugging"
+  ],
+  "outcomes": [
+    "Shipped a complete end-to-end content platform"
+  ]
+}

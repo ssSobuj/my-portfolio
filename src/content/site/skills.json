@@ -1,0 +1,68 @@
+{
+  "heading": "Skills & Technologies",
+  "description": "Here are the technologies and tools I use to bring ideas to life",
+  "categories": [
+    {
+      "title": "Languages",
+      "color": "blue",
+      "skills": [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "title": "Frontend",
+      "color": "green",
+      "skills": [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "Nuxt.js",
+        "React Hook Form",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "title": "Styling",
+      "color": "purple",
+      "skills": [
+        "SASS/SCSS",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "title": "Backend",
+      "color": "orange",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "NextAuth.js"
+      ]
+    },
+    {
+      "title": "Database",
+      "color": "red",
+      "skills": [
+        "MongoDB Atlas",
+        "Mongoose"
+      ]
+    },
+    {
+      "title": "Tools",
+      "color": "cyan",
+      "skills": [
+        "Git/GitHub",
+        "VS Code",
+        "Figma",
+        "Postman",
+        "Firebase",
+        "Vercel",
+        "Jira"
+      ]
+    }
+  ]
+}

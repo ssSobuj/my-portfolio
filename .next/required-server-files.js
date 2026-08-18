@@ -324,7 +324,14 @@ self.__SERVER_FILES_MANIFEST={
     "turbopack": {
       "root": "/Users/f/Desktop/Personal/Portfolio/my-portfolio"
     },
-    "distDirRoot": ".next"
+    "distDirRoot": ".next",
+    "_originalRedirects": [
+      {
+        "source": "/admin",
+        "destination": "/admin/index.html",
+        "permanent": true
+      }
+    ]
   },
   "appDir": "/Users/f/Desktop/Personal/Portfolio/my-portfolio",
   "relativeAppDir": "",

@@ -1,0 +1,32 @@
+{
+  "id": "meridian",
+  "name": "Meridian Consultancy - Immigration & Visa Solutions",
+  "description": "Built the frontend for Meridian Consultancy using React and Next.js. Implemented dynamic pages with API integration and a responsive contact section with external form handling.",
+  "overview": "Meridian Consultancy required a professional web presence with dynamic content sections and clear lead/contact pathways. I implemented frontend sections and integrations to support that outcome.",
+  "image": "/projects/meridian-consultancy.png",
+  "links": {
+    "live": "meridianconsultancy.com.au"
+  },
+  "techs": [
+    "NextJs",
+    "Css"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Dynamic page rendering with API-driven content",
+    "Responsive contact and lead capture sections"
+  ],
+  "frontendWork": [
+    "Built responsive frontend pages and interactive sections",
+    "Integrated API-powered dynamic content"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Used AI support for component-level implementation speed"
+  ],
+  "outcomes": [
+    "Delivered production-ready consultancy web experience"
+  ]
+}

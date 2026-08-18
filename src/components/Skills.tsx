@@ -123,95 +123,46 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const Skills = () => {
-  const skills = {
-    frontend: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "Redux Toolkit",
-      "Zustand",
-      "React Hook Form",
-    ],
-    backend: [
-      "Node.js",
-      "REST APIs",
-      "Prisma",
-      "PostgreSQL",
-      "MySQL",
-      "MongoDB",
-      "Firebase",
-      "JWT",
-    ],
-    aiTools: [
-      "OpenAI API",
-      "Claude",
-      "GitHub Copilot",
-      "Cursor",
-      "Prompt Engineering for Dev Tasks",
-      "AI-Assisted Code Review",
-      "LLM Workflow Prototyping",
-    ],
-    stylingUi: [
-      "Tailwind CSS",
-      "ShadCN UI",
-      "SCSS",
-      "Bootstrap",
-      "Responsive Web Design",
-      "CSS Modules",
-      "Figma",
-    ],
-    toolsPerformance: [
-      "Git",
-      "GitHub",
-      "Bitbucket",
-      "Vercel",
-      "Postman",
-      "SSR",
-      "CSR",
-      "SEO Best Practices",
-      "SWR",
-    ],
-  };
+const Skills = ({ data }: { data: any }) => {
 
-  // Simplified data structure, no more colors needed
-  const skillCategories = [
-    { title: "Frontend", skills: skills.frontend, icon: <MonitorSmartphone /> },
-    { title: "Backend", skills: skills.backend, icon: <Server /> },
-    { title: "AI Workflow & Tools", skills: skills.aiTools, icon: <Sparkles /> },
-    { title: "Styling & UI", skills: skills.stylingUi, icon: <Palette /> },
-    {
-      title: "Tools & Performance",
-      skills: skills.toolsPerformance,
-      icon: <Briefcase />,
-    },
-  ];
+  const getIcon = (title: string) => {
+    switch (title.toLowerCase()) {
+      case "frontend": return <MonitorSmartphone size={24} />;
+      case "backend": return <Server size={24} />;
+      case "ai workflow & tools": return <Sparkles size={24} />;
+      case "styling & ui": 
+      case "styling": return <Palette size={24} />;
+      case "tools & performance": 
+      case "tools": return <Briefcase size={24} />;
+      case "database": return <Server size={24} />;
+      case "languages": return <MonitorSmartphone size={24} />;
+      default: return <Sparkles size={24} />;
+    }
+  };
 
   return (
     <section id="skills" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Skills & Technologies
+            {data.heading}
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A snapshot of the primary tools and technologies I use to build
-            modern web applications.
+            {data.description}
           </p>
         </div>
 
         {/* New "Smart Card" Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category) => (
+          {data.categories.map((category: any) => (
             <div
               key={category.title}
               className="bg-card rounded-xl p-6 border border-border hover:border-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
             >
               <div className="flex items-center mb-4">
                 <div className="text-indigo-400 mr-4">
-                  {React.cloneElement(category.icon, { size: 24 })}
+                  {getIcon(category.title)}
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">
                   {category.title}
@@ -219,7 +170,7 @@ const Skills = () => {
               </div>
 
               <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
-                {category.skills.map((skill) => (
+                {category.skills.map((skill: string) => (
                   <span
                     key={skill}
                     className="px-3 py-1 bg-muted border border-border text-muted-foreground rounded-full text-sm font-medium"

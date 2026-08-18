@@ -102,7 +102,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
-const Hero = () => {
+const Hero = ({ data }: { data: any }) => {
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
@@ -152,7 +152,7 @@ const Hero = () => {
             <motion.div variants={word} className="mb-8">
               <div className="inline-block px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-6">
                 <span className="text-indigo-400 text-sm font-medium">
-                  Open for new opportunities
+                  {data.tagline}
                 </span>
               </div>
             </motion.div>
@@ -161,19 +161,16 @@ const Hero = () => {
               variants={word}
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight text-center lg:text-left"
             >
-              <span className="text-indigo-400">Full-Stack</span> Developer
+              <span className="text-indigo-400">{data.titlePart1}</span>{data.titlePart2}
               <br />
-              Building Modern Web Applications
+              {data.subtitle}
             </motion.h1>
 
             <motion.p
               variants={word}
               className="text-xl text-muted-foreground mb-12 leading-relaxed"
             >
-              I build fast, reliable web apps with React/Next.js, Node.js APIs,
-              and SQL/NoSQL databases, while using AI-assisted workflows with
-              Claude, OpenAI, and Copilot to speed up iteration and improve code
-              quality.
+              {data.description}
             </motion.p>
 
             <motion.div
@@ -181,18 +178,18 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center"
             >
               <a
-                href="/Sabuj_Mia_FullStack_Engineer.pdf"
+                href={data.cvLink}
                 download
                 className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                Download CV
+                {data.cvText}
               </a>
               <a
                 href="#"
                 onClick={(e) => handleSmoothScroll(e, "#about")}
                 className="border border-border hover:border-foreground/40 text-muted-foreground hover:text-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
               >
-                Learn More
+                {data.learnMoreText}
                 <ArrowDown size={20} />
               </a>
             </motion.div>
@@ -207,7 +204,7 @@ const Hero = () => {
           >
             <motion.div variants={word} className="relative z-10">
               <img
-                src="/sobujcv.jpg"
+                src={data.image}
                 alt="Developer workspace"
                 className="w-full max-h-[500px] h-auto rounded-2xl shadow-2xl object-cover"
               />

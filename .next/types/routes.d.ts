@@ -5,13 +5,14 @@ type AppRoutes = "/" | "/projects/[id]"
 type AppRouteHandlerRoutes = "/auth" | "/callback"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/admin"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/admin": {}
   "/auth": {}
   "/callback": {}
   "/projects/[id]": { "id": string; }

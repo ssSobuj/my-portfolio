@@ -1,0 +1,43 @@
+{
+  "id": "aurora-bangladesh",
+  "name": "Aurora Bangladesh - E-commerce Platform",
+  "description": "Developed a full-stack multi-store and multi-branch e-commerce platform for store, showroom, and warehouse operations. Implemented admin/super-admin/staff RBAC, integrated SSLCommerz payments and SSL SMS templates, and built scalable backend workflows with reusable ShadCN UI components and AI-supported rapid iteration.",
+  "overview": "Aurora Bangladesh is a commerce platform covering catalog browsing, checkout, and business operations for multiple stores and branches. I worked across both product and system layers to ensure the storefront experience and internal workflows stayed reliable and scalable.",
+  "image": "/projects/aurora.png",
+  "links": {
+    "live": "aurorabangladesh.com"
+  },
+  "techs": [
+    "Next.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Prisma",
+    "Tailwind CSS",
+    "ShadCN UI"
+  ],
+  "hasImage": true,
+  "type": "fullstack",
+  "role": "Full-Stack Developer",
+  "features": [
+    "Multi-store and multi-branch operations",
+    "RBAC for admin, super admin, and staff",
+    "Integrated payment and SMS workflows",
+    "Responsive storefront with product browsing and cart"
+  ],
+  "frontendWork": [
+    "Built responsive pages for category and product browsing",
+    "Implemented reusable UI sections using ShadCN patterns"
+  ],
+  "backendWork": [
+    "Built scalable backend flows for store operations",
+    "Implemented secure role-based permission logic"
+  ],
+  "aiWorkflow": [
+    "Used AI-assisted code suggestions for faster iteration",
+    "Used AI support for refactor validation and cleanup"
+  ],
+  "outcomes": [
+    "Shipped a live e-commerce system with operations support",
+    "Maintained product speed across customer and admin views"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "uylab",
+  "name": "Learning Management System",
+  "description": "I've nearly finished Uylab's LMS front end, creating a responsive UI with Next.js, SASS, and Bootstrap, ensuring smooth UX with real-time sync.",
+  "overview": "This LMS frontend focuses on course-driven UX, responsive dashboard sections, and stable interaction patterns for learners and instructors.",
+  "image": "/projects/uylab.png",
+  "links": {
+    "live": "uylab.org"
+  },
+  "techs": [
+    "NextJs",
+    "Bootstrap",
+    "SCSS"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Responsive LMS dashboard interfaces",
+    "Course and learning flow UI sections",
+    "Real-time sync-ready UX structure"
+  ],
+  "frontendWork": [
+    "Built and structured key LMS frontend pages",
+    "Improved responsiveness and usability"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Used AI suggestions for faster UI problem solving"
+  ],
+  "outcomes": [
+    "Delivered near-finished responsive LMS frontend"
+  ]
+}

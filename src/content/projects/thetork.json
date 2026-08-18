@@ -1,0 +1,33 @@
+{
+  "id": "thetork",
+  "name": "The Tork Inc. Official Website Development",
+  "description": "Developed The Tork Inc. website using React and Next.js, creating a responsive, high-performance platform that highlights the company's tech services and enhances user experience.",
+  "overview": "A company website implementation focused on performance, clear communication of services, and conversion-friendly layout behavior.",
+  "image": "/projects/thetork.png",
+  "links": {
+    "live": "thetork.com"
+  },
+  "techs": [
+    "NextJs",
+    "Bootstrap",
+    "SCSS"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Service-focused landing experience",
+    "Responsive and performance-conscious frontend"
+  ],
+  "frontendWork": [
+    "Built core marketing pages and UX flow",
+    "Improved responsiveness and load behavior"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Used AI-assisted content and UI refinement workflow"
+  ],
+  "outcomes": [
+    "Delivered polished public-facing company website"
+  ]
+}

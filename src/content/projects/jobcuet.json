@@ -1,0 +1,34 @@
+{
+  "id": "jobcuet",
+  "name": "CUET Job Portal",
+  "description": "Built the frontend for a CUET job portal with responsive dashboards, job listings, and a CV builder using React and Next.js. Integrated REST APIs for seamless data flow and implemented real-time updates with SWR.",
+  "overview": "The portal includes job discovery, profile, and CV builder flows. I focused on making dashboards responsive and data interactions feel smooth and reliable.",
+  "image": "/projects/jobcuet.png",
+  "links": {
+    "live": "jobs.cuet.ac.bd"
+  },
+  "techs": [
+    "NextJs",
+    "Bootstrap",
+    "SCSS"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Job listing and application flows",
+    "Responsive dashboards and profile pages",
+    "CV builder interface"
+  ],
+  "frontendWork": [
+    "Built portal UI with responsive interaction flows",
+    "Integrated REST APIs and SWR for live data updates"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Used AI assistance to speed up integration troubleshooting"
+  ],
+  "outcomes": [
+    "Delivered stable, responsive frontend for job platform"
+  ]
+}

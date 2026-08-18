@@ -17,18 +17,115 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "ID", name: "id", widget: "string" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Type", name: "type", widget: "select", options: ["professional", "personal", "fullstack"] }
       - { label: "Role", name: "role", widget: "string" }
       - { label: "Overview", name: "overview", widget: "text" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Live Link", name: "live", widget: "string", required: false }
-      - { label: "Frontend Github", name: "github_frontend", widget: "string", required: false }
-      - { label: "Backend Github", name: "github_backend", widget: "string", required: false }
+      - { label: "Has Image", name: "hasImage", widget: "boolean", default: true }
+      - label: "Links"
+        name: "links"
+        widget: "object"
+        fields:
+          - { label: "Live Link", name: "live", widget: "string", required: false }
+          - { label: "Frontend Github", name: "github_frontend", widget: "string", required: false }
+          - { label: "Backend Github", name: "github_backend", widget: "string", required: false }
       - { label: "Frontend Work", name: "frontendWork", widget: "list" }
       - { label: "Backend Work", name: "backendWork", widget: "list" }
       - { label: "AI Workflow", name: "aiWorkflow", widget: "list" }
       - { label: "Features", name: "features", widget: "list" }
       - { label: "Tech Stack", name: "techs", widget: "list" }
       - { label: "Outcomes", name: "outcomes", widget: "list" }
+
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "src/content/site/hero.json"
+        fields:
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Title Part 1", name: "titlePart1", widget: "string" }
+          - { label: "Title Part 2", name: "titlePart2", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "CV Link", name: "cvLink", widget: "string" }
+          - { label: "CV Text", name: "cvText", widget: "string" }
+          - { label: "Learn More Text", name: "learnMoreText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+
+      - name: "about"
+        label: "About Section"
+        file: "src/content/site/about.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Sub Heading", name: "subHeading", widget: "string" }
+          - { label: "Paragraphs", name: "paragraphs", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" } }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
+          - label: "Terminal Code Box"
+            name: "terminalCode"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Experience", name: "experience", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Passion", name: "passion", widget: "string" }
+              - { label: "AI Workflow", name: "aiWorkflow", widget: "string" }
+
+      - name: "experience"
+        label: "Experience Section"
+        file: "src/content/site/experience.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Experience Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Period", name: "period", widget: "string" }
+              - { label: "Duration", name: "duration", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Mode", name: "mode", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+
+      - name: "skills"
+        label: "Skills Section"
+        file: "src/content/site/skills.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Color", name: "color", widget: "select", options: ["blue", "green", "purple", "orange", "red", "cyan"] }
+              - { label: "Skills", name: "skills", widget: "list" }
+
+      - name: "contact"
+        label: "Contact Section"
+        file: "src/content/site/contact.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - label: "Socials"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "GitHub", name: "github", widget: "string" }
+              - { label: "LinkedIn", name: "linkedin", widget: "string" }
+              - { label: "Twitter", name: "twitter", widget: "string" }

@@ -1,0 +1,33 @@
+{
+  "id": "cuet",
+  "name": "CUET Official Web Application",
+  "description": "I worked on the CUET official web app front end, focusing on responsive design and optimizing the user experience.",
+  "overview": "I contributed to the official university web application by improving frontend quality, responsiveness, and content accessibility for different device sizes.",
+  "image": "/projects/cuet.png",
+  "links": {
+    "live": "cuet.ac.bd"
+  },
+  "techs": [
+    "NextJs",
+    "Bootstrap",
+    "SCSS"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Responsive layouts for key pages",
+    "Improved visual hierarchy and readability"
+  ],
+  "frontendWork": [
+    "Implemented responsive page sections",
+    "Optimized UI behavior across desktop and mobile"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Used AI support for UI refinement and faster QA passes"
+  ],
+  "outcomes": [
+    "Delivered a smoother experience for public users"
+  ]
+}

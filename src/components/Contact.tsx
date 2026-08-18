@@ -1,19 +1,17 @@
 import React from "react";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
-const Contact = () => {
+const Contact = ({ data }: { data: any }) => {
   return (
     <section id="contact" className="py-20 bg-muted">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Get In Touch
+            {data.heading}
           </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto mb-8"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to
-            bring your ideas to life with full-stack engineering and modern
-            AI-enhanced development workflows.
+            {data.description}
           </p>
         </div>
 
@@ -23,11 +21,7 @@ const Contact = () => {
               Let's Connect
             </h3>
             <p className="text-muted-foreground text-lg">
-              I'm always interested in hearing about new projects and
-              opportunities. Whether you're a company looking to hire, or you're
-              a developer looking to collaborate, I'd love to hear from you.
-              I bring full-stack execution with practical experience using
-              Claude, OpenAI, and Copilot in real development workflows.
+              {data.description}
             </p>
           </div>
 
@@ -39,10 +33,10 @@ const Contact = () => {
               <div>
                 <h4 className="text-foreground font-semibold">Email</h4>
                 <a
-                  href="mailto:mdsobujredoy@gmail.com"
+                  href={`mailto:${data.email}`}
                   className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                 >
-                  mdsobujredoy@gmail.com
+                  {data.email}
                 </a>
               </div>
             </div>
@@ -54,12 +48,12 @@ const Contact = () => {
               <div>
                 <h4 className="text-foreground font-semibold">LinkedIn</h4>
                 <a
-                  href="https://www.linkedin.com/in/developer-sabuj-mia/"
+                  href={data.socials.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                 >
-                  developer-sabuj-mia
+                  {data.socials.linkedin.replace("https://www.linkedin.com/in/", "").replace("/", "")}
                 </a>
               </div>
             </div>
@@ -71,12 +65,12 @@ const Contact = () => {
               <div>
                 <h4 className="text-foreground font-semibold">GitHub</h4>
                 <a
-                  href="https://github.com/ssSobuj"
+                  href={data.socials.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                 >
-                  ssSobuj
+                  {data.socials.github.replace("https://github.com/", "")}
                 </a>
               </div>
             </div>
@@ -88,10 +82,10 @@ const Contact = () => {
               <div>
                 <h4 className="text-foreground font-semibold">Phone</h4>
                 <a
-                  href="tel:+01731620933"
+                  href={`tel:${data.phone}`}
                   className="text-muted-foreground hover:text-indigo-400 transition-colors duration-200"
                 >
-                  +01731620933
+                  {data.phone}
                 </a>
               </div>
             </div>

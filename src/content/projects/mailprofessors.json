@@ -1,0 +1,36 @@
+{
+  "id": "mailprofessors",
+  "name": "Mail Professors - AI Academic Outreach Platform",
+  "description": "Developed the frontend for an AI-powered platform that helps students find and contact university professors for research opportunities. My responsibilities included building the core user interfaces for searching professors, filtering results, and managing AI-generated personalized emails. Leveraged Next.js and MUI to create a highly responsive and intuitive user experience.",
+  "overview": "Mail Professors helps students discover matching professors and generate personalized outreach emails. I focused on building clear user flows for search, filtering, and email generation management.",
+  "image": "/projects/mailprofessors.png",
+  "links": {
+    "live": "mailprofessors.com"
+  },
+  "techs": [
+    "Next.js",
+    "MUI",
+    "TypeScript",
+    "AI Integration"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Professor discovery and filtering interface",
+    "AI-generated personalized email management",
+    "Plan and usage-focused onboarding screens"
+  ],
+  "frontendWork": [
+    "Built core product pages for student workflows",
+    "Implemented responsive interaction across desktop and mobile"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Worked on UI experience for AI-driven email generation features",
+    "Used AI tools in development for faster implementation loops"
+  ],
+  "outcomes": [
+    "Delivered frontend for a live AI-powered platform"
+  ]
+}

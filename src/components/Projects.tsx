@@ -8,9 +8,8 @@ import {
   User,
   Layers,
 } from "lucide-react";
-import { projects } from "@/data/projects";
 
-const Projects = () => {
+const Projects = ({ data: projects }: { data: any[] }) => {
   const getProjectTypeIcon = (type) => {
     switch (type) {
       case "professional":

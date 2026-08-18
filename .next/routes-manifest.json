@@ -12,6 +12,12 @@
       "priority": true,
       "statusCode": 308,
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin/index.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/admin(?:/)?$"
     }
   ],
   "headers": [],

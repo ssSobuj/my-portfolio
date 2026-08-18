@@ -1,0 +1,34 @@
+{
+  "id": "kireibd",
+  "name": "Kirai BD a e-commerce Website",
+  "description": "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Next.js, Bootstrap, and SASS, ensuring a smooth shopping experience with real-time updates.",
+  "overview": "Kirei BD is an e-commerce frontend implementation focused on visual polish, responsive behavior, and smooth shopping interactions for customer-facing pages.",
+  "image": "/projects/kiraibd.png",
+  "links": {
+    "live": "kireibd.com"
+  },
+  "techs": [
+    "NextJs",
+    "Bootstrap",
+    "SCSS"
+  ],
+  "hasImage": true,
+  "type": "professional",
+  "role": "Frontend Developer",
+  "features": [
+    "Responsive storefront pages",
+    "Product-focused UI interactions",
+    "Real-time update-friendly interface patterns"
+  ],
+  "frontendWork": [
+    "Built customer-facing frontend with modern UI patterns",
+    "Improved interaction quality for product browsing"
+  ],
+  "backendWork": [],
+  "aiWorkflow": [
+    "Used AI support for component iteration and styling speed"
+  ],
+  "outcomes": [
+    "Reached near-complete frontend delivery"
+  ]
+}

@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, Briefcase, Github, Layers, User } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { projects } from "@/data/projects";
 
 const getProjectTypeIcon = (type: string) => {
   switch (type) {
@@ -45,10 +43,7 @@ const formatProjectType = (type: string) => {
   }
 };
 
-const ProjectDetails = () => {
-  const params = useParams();
-  const id = params?.id;
-  const project = projects.find((item) => item.id === id);
+const ProjectDetails = ({ project }: { project: any }) => {
 
   if (!project) {
     return (

@@ -1,0 +1,45 @@
+{
+  "id": "saas-crm-accounting",
+  "name": "Multi-Tenant SaaS CRM & Accounting Platform",
+  "description": "Built a multi-tenant SaaS platform with CRM and accounting modules, role-based access control, real-time notifications with Socket.io and SMS integration, and an EPS payment/subscription workflow. Delivered a public landing page, user dashboard, and super admin panel while designing scalable APIs, optimizing database performance, and accelerating delivery with AI-assisted implementation and debugging workflows.",
+  "overview": "This project is a complete multi-tenant SaaS product with business operations across CRM and accounting workflows. I delivered key product experiences from landing to dashboard to admin, while structuring architecture for scale, role control, and reliable performance in production.",
+  "image": "/projects/shocchota.png",
+  "links": {
+    "live": "landing-page-shocchota.vercel.app"
+  },
+  "techs": [
+    "Next.js",
+    "Prisma",
+    "MySQL",
+    "React Query",
+    "Zustand",
+    "Socket.io",
+    "Tailwind CSS",
+    "ShadCN UI"
+  ],
+  "hasImage": true,
+  "type": "fullstack",
+  "role": "Full-Stack Developer",
+  "features": [
+    "Multi-tenant architecture with role-based access",
+    "CRM and accounting modules under one platform",
+    "Real-time notifications with Socket.io and SMS",
+    "Subscription and payment workflow integration"
+  ],
+  "frontendWork": [
+    "Built landing page, dashboard, and super admin UI",
+    "Designed reusable components for product consistency"
+  ],
+  "backendWork": [
+    "Designed scalable API structure for tenant isolation",
+    "Optimized Prisma queries and database access patterns"
+  ],
+  "aiWorkflow": [
+    "Used AI tools to speed up implementation alternatives",
+    "Used AI-assisted debugging to reduce iteration time"
+  ],
+  "outcomes": [
+    "Delivered production-ready full product flow",
+    "Improved delivery speed while keeping clean architecture"
+  ]
+}

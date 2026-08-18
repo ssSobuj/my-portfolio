@@ -1,0 +1,31 @@
+{
+  "heading": "About Me",
+  "subHeading": "Full-Stack Developer Building End-to-End Products",
+  "paragraphs": [
+    "I'm a full-stack developer who builds modern web experiences from UI to API. I specialize in React and Next.js on the frontend and Node.js with REST APIs on the backend, delivering clean, maintainable code.",
+    "I work with SQL and PostgreSQL alongside MongoDB and Redis, choosing the right data model for each feature. I also use AI-assisted development workflows with Claude, OpenAI, and GitHub Copilot for faster prototyping, smarter debugging, and safer refactoring.",
+    "My focus is on scalable architecture, performance, and product polish across the stack while using modern AI tools to improve delivery speed and maintain strong engineering quality."
+  ],
+  "stats": [
+    {
+      "label": "Years Experience",
+      "value": "2+"
+    },
+    {
+      "label": "Projects Completed",
+      "value": "9+"
+    },
+    {
+      "label": "Technologies Mastered",
+      "value": "10+"
+    }
+  ],
+  "terminalCode": {
+    "name": "Sobuj Mia",
+    "role": "Full-Stack Developer",
+    "experience": "2+ years",
+    "location": "Bangladesh",
+    "passion": "Building end-to-end products",
+    "aiWorkflow": "Claude, OpenAI, Copilot"
+  }
+}
