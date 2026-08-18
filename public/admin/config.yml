@@ -1,8 +1,7 @@
 backend:
   name: github
   repo: ssSobuj/my-portfolio
-  branch: nextjs-cms-migration
-  base_url: https://your-portfolio-domain.vercel.app # TODO: Update this to actual Vercel domain
+  branch: main
   auth_endpoint: auth
 
 local_backend: true
