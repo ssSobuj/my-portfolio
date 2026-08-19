@@ -9,11 +9,11 @@
   "stats": [
     {
       "label": "Years Experience",
-      "value": "2+"
+      "value": "3"
     },
     {
       "label": "Projects Completed",
-      "value": "9+"
+      "value": "15+"
     },
     {
       "label": "Technologies Mastered",
@@ -23,7 +23,7 @@
   "terminalCode": {
     "name": "Sobuj Mia",
     "role": "Full-Stack Developer",
-    "experience": "2+ years",
+    "experience": "3 years",
     "location": "Bangladesh",
     "passion": "Building end-to-end products",
     "aiWorkflow": "Claude, OpenAI, Copilot"
